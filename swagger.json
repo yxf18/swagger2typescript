@@ -1,17 +1,16 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "服务管理、业务集成",
-    "version": "3.0.0.alpha",
-    "title": "柯林布瑞业务共享中台",
+    "description": "管理中心",
+    "version": "2.0",
+    "title": "柯林布瑞业务共享中台v2",
     "contact": {
       "name": "clinbrain",
       "url": "https://www.clinbrain.com/"
     }
   },
-  "host": "192.168.8.11:10097",
-  "basePath": "/v2",
-  "schemes": ["https", "http"],
+  "host": "192.168.0.220:16261",
+  "basePath": "/",
   "tags": [
     {
       "name": "basic-error-controller",
@@ -108,10 +107,6 @@
     {
       "name": "数据源",
       "description": "Sys Data Source Controller"
-    },
-    {
-      "name": "数据统计展示",
-      "description": "Monitor Controller"
     },
     {
       "name": "数据资源",
@@ -550,55 +545,6 @@
         "deprecated": false
       }
     },
-    "/monitor/ui/dashboard": {
-      "post": {
-        "tags": [
-          "数据统计展示"
-        ],
-        "summary": "仪表盘聚合数据",
-        "operationId": "dashboardUsingPOST",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "*/*"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "criteria",
-            "description": "criteria",
-            "required": true,
-            "schema": {
-              "originalRef": "服务监控-面板查询",
-              "$ref": "#/definitions/服务监控-面板查询"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "schema": {
-              "originalRef": "R«DashboardResDto»",
-              "$ref": "#/definitions/R«DashboardResDto»"
-            }
-          },
-          "201": {
-            "description": "Created"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        },
-        "deprecated": false
-      }
-    },
     "/sm/category/create": {
       "post": {
         "tags": [
@@ -893,8 +839,8 @@
         "tags": [
           "【服务】整体预处理器"
         ],
-        "summary": "创建个性预处理器",
-        "description": "创建个性预处理器",
+        "summary": "创建整体预处理器",
+        "description": "创建整体预处理器",
         "operationId": "createUsingPOST_1",
         "consumes": [
           "application/json"
@@ -943,8 +889,8 @@
         "tags": [
           "【服务】整体预处理器"
         ],
-        "summary": "删除个性预处理器",
-        "description": "删除个性预处理器",
+        "summary": "删除整体预处理器",
+        "description": "删除整体预处理器",
         "operationId": "delUsingPOST_1",
         "consumes": [
           "application/json"
@@ -1039,8 +985,8 @@
         "tags": [
           "【服务】整体结果处理器"
         ],
-        "summary": "创建个性预处理器",
-        "description": "创建个性预处理器",
+        "summary": "创建整体结果处理器",
+        "description": "创建整体结果处理器",
         "operationId": "createUsingPOST_2",
         "consumes": [
           "application/json"
@@ -1089,8 +1035,8 @@
         "tags": [
           "【服务】整体结果处理器"
         ],
-        "summary": "删除个性预处理器",
-        "description": "删除个性预处理器",
+        "summary": "删除整体结果处理器",
+        "description": "删除整体结果处理器",
         "operationId": "delUsingPOST_2",
         "consumes": [
           "application/json"
@@ -1137,8 +1083,8 @@
         "tags": [
           "【服务】整体结果处理器"
         ],
-        "summary": "根据服务id查询整体预处理",
-        "description": "根据服务id查询整体预处理",
+        "summary": "根据服务id整体结果处理器",
+        "description": "根据服务id查询整体结果处理器",
         "operationId": "listUsingPOST_2",
         "consumes": [
           "application/json"
@@ -1162,6 +1108,54 @@
             "schema": {
               "originalRef": "R«List«sm_common_result_processor表的po对象»»",
               "$ref": "#/definitions/R«List«sm_common_result_processor表的po对象»»"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/sm/endpoint/del/{id}": {
+      "post": {
+        "tags": [
+          "【服务】服务配置"
+        ],
+        "summary": "删除提供方",
+        "description": "根据id删除提供方",
+        "operationId": "delUsingPOST_5",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "R",
+              "$ref": "#/definitions/R"
             }
           },
           "201": {
@@ -1733,7 +1727,7 @@
         ],
         "summary": "删除服务参数",
         "description": "删除服务参数",
-        "operationId": "delUsingPOST_6",
+        "operationId": "delUsingPOST_7",
         "consumes": [
           "application/json"
         ],
@@ -2072,6 +2066,48 @@
         "deprecated": false
       }
     },
+    "/sm/serviceInfo/copy/{id}": {
+      "get": {
+        "tags": [
+          "【服务】服务基本信息配置"
+        ],
+        "summary": "服务复制",
+        "description": "服务复制",
+        "operationId": "copyServiceUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "R«int»",
+              "$ref": "#/definitions/R«int»"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
     "/sm/serviceInfo/create": {
       "post": {
         "tags": [
@@ -2129,7 +2165,7 @@
         ],
         "summary": "删除服务基本信息",
         "description": "删除服务基本信息",
-        "operationId": "delUsingPOST_5",
+        "operationId": "delUsingPOST_6",
         "consumes": [
           "application/json"
         ],
@@ -2481,6 +2517,115 @@
         "deprecated": false
       }
     },
+    "/sm/serviceInfo/updateLogLevel": {
+      "get": {
+        "tags": [
+          "【服务】服务基本信息配置"
+        ],
+        "summary": "修改及批量修改服务日志级别",
+        "description": "修改及批量修改服务日志级别",
+        "operationId": "updateLogLevelUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "ids",
+            "in": "query",
+            "description": "ids",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "collectionFormat": "multi"
+          },
+          {
+            "name": "logLevel",
+            "in": "query",
+            "description": "logLevel",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "R",
+              "$ref": "#/definitions/R"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/sm/serviceInfo/updateStatus/{id}/{status}": {
+      "post": {
+        "tags": [
+          "【服务】服务基本信息配置"
+        ],
+        "summary": "修改状态",
+        "description": "修改状态, 服务状态：1=待设计，2=待配置，3=待发布，4=已发布",
+        "operationId": "updateStatusUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "status",
+            "in": "path",
+            "description": "status",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "originalRef": "R",
+              "$ref": "#/definitions/R"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
     "/sm/subscription/apply": {
       "post": {
         "tags": [
@@ -2544,7 +2689,7 @@
         ],
         "summary": "删除申请服务",
         "description": "删除申请服务",
-        "operationId": "delUsingPOST_7",
+        "operationId": "delUsingPOST_8",
         "consumes": [
           "application/json"
         ],
@@ -2642,7 +2787,7 @@
         ],
         "summary": "删除应用系统",
         "description": "删除应用系统",
-        "operationId": "delUsingPOST_9",
+        "operationId": "delUsingPOST_10",
         "consumes": [
           "application/json"
         ],
@@ -3064,7 +3209,7 @@
         ],
         "summary": "删除应用类别",
         "description": "递归删除子节点",
-        "operationId": "delUsingPOST_8",
+        "operationId": "delUsingPOST_9",
         "consumes": [
           "application/json"
         ],
@@ -3353,7 +3498,7 @@
         ],
         "summary": "删除厂商信息",
         "description": "物理删除厂商信息",
-        "operationId": "delUsingPOST_10",
+        "operationId": "delUsingPOST_11",
         "consumes": [
           "application/json"
         ],
@@ -3648,7 +3793,7 @@
         ],
         "summary": "删除全局常量",
         "description": "删除全局常量",
-        "operationId": "delUsingPOST_11",
+        "operationId": "delUsingPOST_12",
         "consumes": [
           "application/json"
         ],
@@ -3838,7 +3983,7 @@
         ],
         "summary": "创建数据同步任务",
         "description": "创建数据同步任务",
-        "operationId": "createUsingPOST_14",
+        "operationId": "createUsingPOST_13",
         "consumes": [
           "application/json"
         ],
@@ -3888,7 +4033,7 @@
         ],
         "summary": "删除工作节点",
         "description": "删除工作节点",
-        "operationId": "delUsingPOST_14",
+        "operationId": "delUsingPOST_15",
         "consumes": [
           "application/json"
         ],
@@ -3986,7 +4131,7 @@
         ],
         "summary": "查询工作节点详情",
         "description": "根据id查询工作节点详情",
-        "operationId": "infoUsingGET_10",
+        "operationId": "infoUsingGET_9",
         "produces": [
           "*/*"
         ],
@@ -4028,7 +4173,7 @@
         ],
         "summary": "修改工作节点",
         "description": "修改工作节点",
-        "operationId": "updateUsingPOST_9",
+        "operationId": "updateUsingPOST_8",
         "consumes": [
           "application/json"
         ],
@@ -4078,7 +4223,7 @@
         ],
         "summary": "创建数据源",
         "description": "创建数据源",
-        "operationId": "createUsingPOST_13",
+        "operationId": "createUsingPOST_12",
         "consumes": [
           "application/json"
         ],
@@ -4128,7 +4273,7 @@
         ],
         "summary": "删除数据源",
         "description": "删除数据源",
-        "operationId": "delUsingPOST_13",
+        "operationId": "delUsingPOST_14",
         "consumes": [
           "application/json"
         ],
@@ -4226,7 +4371,7 @@
         ],
         "summary": "查询数据源详情",
         "description": "根据id查询数据源详情",
-        "operationId": "infoUsingGET_9",
+        "operationId": "infoUsingGET_8",
         "produces": [
           "*/*"
         ],
@@ -4318,7 +4463,7 @@
         ],
         "summary": "修改数据源",
         "description": "修改数据源",
-        "operationId": "updateUsingPOST_8",
+        "operationId": "updateUsingPOST_7",
         "consumes": [
           "application/json"
         ],
@@ -4368,7 +4513,7 @@
         ],
         "summary": "创建机构信息",
         "description": "创建机构信息",
-        "operationId": "createUsingPOST_15",
+        "operationId": "createUsingPOST_14",
         "consumes": [
           "application/json"
         ],
@@ -4418,7 +4563,7 @@
         ],
         "summary": "删除机构信息",
         "description": "删除机构信息",
-        "operationId": "delUsingPOST_15",
+        "operationId": "delUsingPOST_16",
         "consumes": [
           "application/json"
         ],
@@ -4604,7 +4749,7 @@
         ],
         "summary": "查询机构信息",
         "description": "根据id查询机构信息",
-        "operationId": "infoUsingGET_11",
+        "operationId": "infoUsingGET_10",
         "produces": [
           "*/*"
         ],
@@ -4702,7 +4847,7 @@
         ],
         "summary": "修改机构信息",
         "description": "修改机构信息",
-        "operationId": "updateUsingPOST_10",
+        "operationId": "updateUsingPOST_9",
         "consumes": [
           "application/json"
         ],
@@ -4745,14 +4890,14 @@
         "deprecated": false
       }
     },
-    "/sys/resource/create": {
+    "/sys/resource/convertJar/{id}": {
       "post": {
         "tags": [
           "数据资源"
         ],
-        "summary": "创建数据资源",
-        "description": "创建数据资源",
-        "operationId": "createUsingPOST_12",
+        "summary": "动态加载文件",
+        "description": "预览文件",
+        "operationId": "convertJarUsingPOST",
         "consumes": [
           "application/json"
         ],
@@ -4761,22 +4906,20 @@
         ],
         "parameters": [
           {
-            "in": "body",
-            "name": "dto",
-            "description": "dto",
+            "name": "id",
+            "in": "path",
+            "description": "id",
             "required": true,
-            "schema": {
-              "originalRef": "数据资源-新增",
-              "$ref": "#/definitions/数据资源-新增"
-            }
+            "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
           "200": {
             "description": "OK",
             "schema": {
-              "originalRef": "R«sys_data_resource表的po对象»",
-              "$ref": "#/definitions/R«sys_data_resource表的po对象»"
+              "originalRef": "R«string»",
+              "$ref": "#/definitions/R«string»"
             }
           },
           "201": {
@@ -4802,7 +4945,7 @@
         ],
         "summary": "删除数据资源",
         "description": "删除数据资源",
-        "operationId": "delUsingPOST_12",
+        "operationId": "delUsingPOST_13",
         "consumes": [
           "application/json"
         ],
@@ -4873,8 +5016,8 @@
           "200": {
             "description": "OK",
             "schema": {
-              "originalRef": "R«List«sys_data_resource表的po对象»»",
-              "$ref": "#/definitions/R«List«sys_data_resource表的po对象»»"
+              "originalRef": "R«List«数据资源列表返回对象»»",
+              "$ref": "#/definitions/R«List«数据资源列表返回对象»»"
             }
           },
           "201": {
@@ -4893,14 +5036,17 @@
         "deprecated": false
       }
     },
-    "/sys/resource/info/{id}": {
-      "get": {
+    "/sys/resource/preview/{id}": {
+      "post": {
         "tags": [
           "数据资源"
         ],
-        "summary": "查询应用系统详情",
-        "description": "根据id查询应用系统详情",
-        "operationId": "infoUsingGET_8",
+        "summary": "预览文件",
+        "description": "预览文件",
+        "operationId": "previewFileUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
         "produces": [
           "*/*"
         ],
@@ -4918,9 +5064,12 @@
           "200": {
             "description": "OK",
             "schema": {
-              "originalRef": "R«sys_data_resource表的po对象»",
-              "$ref": "#/definitions/R«sys_data_resource表的po对象»"
+              "originalRef": "R«string»",
+              "$ref": "#/definitions/R«string»"
             }
+          },
+          "201": {
+            "description": "Created"
           },
           "401": {
             "description": "Unauthorized"
@@ -4935,38 +5084,57 @@
         "deprecated": false
       }
     },
-    "/sys/resource/update": {
+    "/sys/resource/upload": {
       "post": {
         "tags": [
           "数据资源"
         ],
-        "summary": "修改数据资源",
-        "description": "修改数据资源",
-        "operationId": "updateUsingPOST_7",
+        "summary": "上传文件",
+        "description": "上传文件，重新上传需传id",
+        "operationId": "uploadFileUsingPOST",
         "consumes": [
-          "application/json"
+          "multipart/form-data"
         ],
         "produces": [
           "*/*"
         ],
         "parameters": [
           {
-            "in": "body",
-            "name": "dto",
-            "description": "dto",
+            "name": "file",
+            "in": "formData",
+            "description": "file",
             "required": true,
-            "schema": {
-              "originalRef": "数据资源-更新",
-              "$ref": "#/definitions/数据资源-更新"
-            }
+            "type": "file"
+          },
+          {
+            "name": "fileFormat",
+            "in": "query",
+            "description": "fileFormat",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "description": "id",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
           "200": {
             "description": "OK",
             "schema": {
-              "originalRef": "R«sys_data_resource表的po对象»",
-              "$ref": "#/definitions/R«sys_data_resource表的po对象»"
+              "originalRef": "R",
+              "$ref": "#/definitions/R"
             }
           },
           "201": {
@@ -4992,7 +5160,7 @@
         ],
         "summary": "创建第三方API服务",
         "description": "创建第三方API服务",
-        "operationId": "createUsingPOST_16",
+        "operationId": "createUsingPOST_15",
         "consumes": [
           "application/json"
         ],
@@ -5042,7 +5210,7 @@
         ],
         "summary": "删除第三方API服务",
         "description": "删除第三方API服务",
-        "operationId": "delUsingPOST_16",
+        "operationId": "delUsingPOST_17",
         "consumes": [
           "application/json"
         ],
@@ -5140,7 +5308,7 @@
         ],
         "summary": "查询第三方API服务详情",
         "description": "根据id查询第三方API服务详情",
-        "operationId": "infoUsingGET_12",
+        "operationId": "infoUsingGET_11",
         "produces": [
           "*/*"
         ],
@@ -5182,7 +5350,7 @@
         ],
         "summary": "修改第三方API服务",
         "description": "修改第三方API服务",
-        "operationId": "updateUsingPOST_11",
+        "operationId": "updateUsingPOST_10",
         "consumes": [
           "application/json"
         ],
@@ -5232,7 +5400,7 @@
         ],
         "summary": "创建工作节点分组",
         "description": "创建工作节点分组",
-        "operationId": "createUsingPOST_17",
+        "operationId": "createUsingPOST_16",
         "consumes": [
           "application/json"
         ],
@@ -5282,7 +5450,7 @@
         ],
         "summary": "删除工作节点分组",
         "description": "删除工作节点分组",
-        "operationId": "delUsingPOST_17",
+        "operationId": "delUsingPOST_18",
         "consumes": [
           "application/json"
         ],
@@ -5380,7 +5548,7 @@
         ],
         "summary": "查询工作节点分组详情",
         "description": "根据id查询工作节点分组详情",
-        "operationId": "infoUsingGET_13",
+        "operationId": "infoUsingGET_12",
         "produces": [
           "*/*"
         ],
@@ -5422,7 +5590,7 @@
         ],
         "summary": "修改工作节点分组",
         "description": "修改工作节点分组",
-        "operationId": "updateUsingPOST_12",
+        "operationId": "updateUsingPOST_11",
         "consumes": [
           "application/json"
         ],
@@ -5472,7 +5640,7 @@
         ],
         "summary": "创建工作节点",
         "description": "创建工作节点",
-        "operationId": "createUsingPOST_18",
+        "operationId": "createUsingPOST_17",
         "consumes": [
           "application/json"
         ],
@@ -5522,7 +5690,7 @@
         ],
         "summary": "删除工作节点",
         "description": "删除工作节点",
-        "operationId": "delUsingPOST_18",
+        "operationId": "delUsingPOST_19",
         "consumes": [
           "application/json"
         ],
@@ -5620,7 +5788,7 @@
         ],
         "summary": "查询工作节点详情",
         "description": "根据id查询工作节点详情",
-        "operationId": "infoUsingGET_14",
+        "operationId": "infoUsingGET_13",
         "produces": [
           "*/*"
         ],
@@ -5718,7 +5886,7 @@
         ],
         "summary": "修改工作节点",
         "description": "修改工作节点",
-        "operationId": "updateUsingPOST_13",
+        "operationId": "updateUsingPOST_12",
         "consumes": [
           "application/json"
         ],
@@ -6905,39 +7073,6 @@
       },
       "title": "CategoryTree"
     },
-    "DashboardResDto": {
-      "type": "object",
-      "properties": {
-        "durationAvg": {
-          "type": "number",
-          "description": "平均耗时"
-        },
-        "failQty": {
-          "type": "integer",
-          "format": "int32",
-          "description": "失败量"
-        },
-        "requestAvg": {
-          "type": "number",
-          "description": "平均请求量"
-        },
-        "requestQty": {
-          "type": "integer",
-          "format": "int32",
-          "description": "请求量"
-        },
-        "successQty": {
-          "type": "integer",
-          "format": "int32",
-          "description": "成功量"
-        },
-        "successRate": {
-          "type": "number",
-          "description": "成功率"
-        }
-      },
-      "title": "DashboardResDto"
-    },
     "Map«string,List«前端下拉列表项»»": {
       "type": "object",
       "title": "Map«string,List«前端下拉列表项»»",
@@ -7354,23 +7489,6 @@
       },
       "title": "R«CategoryResDto»"
     },
-    "R«DashboardResDto»": {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "data": {
-          "originalRef": "DashboardResDto",
-          "$ref": "#/definitions/DashboardResDto"
-        },
-        "msg": {
-          "type": "string"
-        }
-      },
-      "title": "R«DashboardResDto»"
-    },
     "R«List«AppCategoryResDto»»": {
       "type": "object",
       "properties": {
@@ -7611,26 +7729,6 @@
       },
       "title": "R«List«sys_constant表的po对象»»"
     },
-    "R«List«sys_data_resource表的po对象»»": {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "data": {
-          "type": "array",
-          "items": {
-            "originalRef": "sys_data_resource表的po对象",
-            "$ref": "#/definitions/sys_data_resource表的po对象"
-          }
-        },
-        "msg": {
-          "type": "string"
-        }
-      },
-      "title": "R«List«sys_data_resource表的po对象»»"
-    },
     "R«List«sys_data_source表的po对象»»": {
       "type": "object",
       "properties": {
@@ -7730,6 +7828,26 @@
         }
       },
       "title": "R«List«交互日志-高级检索结果»»"
+    },
+    "R«List«数据资源列表返回对象»»": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "originalRef": "数据资源列表返回对象",
+            "$ref": "#/definitions/数据资源列表返回对象"
+          }
+        },
+        "msg": {
+          "type": "string"
+        }
+      },
+      "title": "R«List«数据资源列表返回对象»»"
     },
     "R«List«新增提供方-值»»": {
       "type": "object",
@@ -7970,6 +8088,23 @@
       },
       "title": "R«UserInfo»"
     },
+    "R«int»": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "data": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "msg": {
+          "type": "string"
+        }
+      },
+      "title": "R«int»"
+    },
     "R«sm_category表的po对象»": {
       "type": "object",
       "properties": {
@@ -8155,23 +8290,6 @@
         }
       },
       "title": "R«sys_constant表的po对象»"
-    },
-    "R«sys_data_resource表的po对象»": {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "data": {
-          "originalRef": "sys_data_resource表的po对象",
-          "$ref": "#/definitions/sys_data_resource表的po对象"
-        },
-        "msg": {
-          "type": "string"
-        }
-      },
-      "title": "R«sys_data_resource表的po对象»"
     },
     "R«sys_data_source表的po对象»": {
       "type": "object",
@@ -8417,155 +8535,176 @@
         "canDelete": {
           "type": "integer",
           "format": "int32",
-          "description": "是否可删除：0-否，1-是，对于一些系统固化的api，禁止在前端删除"
+          "description": "是否可删除：0-否，1-是，对于一些系统固化的api，禁止在前端删除",
+          "refType": null
         },
         "canEdit": {
           "type": "integer",
           "format": "int32",
-          "description": "是否可编辑：0-否，1-是，对于一些系统固化的api，禁止在前端修改"
+          "description": "是否可编辑：0-否，1-是，对于一些系统固化的api，禁止在前端修改",
+          "refType": null
         },
         "categoryId": {
           "type": "integer",
           "format": "int32",
-          "description": "所属分组ID，关联：sm_category.id"
+          "description": "所属分组ID，关联：sm_category.id",
+          "refType": null
         },
         "categoryName": {
           "type": "string",
-          "description": "所属服务类别名称"
+          "description": "所属服务类别名称",
+          "refType": null
         },
         "code": {
           "type": "string",
-          "description": "服务代码"
+          "description": "服务代码",
+          "refType": null
         },
         "ctime": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "refType": null
         },
         "cuid": {
           "type": "integer",
-          "format": "int32"
-        },
-        "failRespTpl": {
-          "type": "string",
-          "description": "异步模式时，错误响应模板（符合freemarker规范）"
+          "format": "int32",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int32",
-          "description": "主键id"
+          "description": "主键id",
+          "refType": null
         },
         "inBodyFormat": {
           "type": "string",
-          "description": "入参消息体格式，取值：空，json - json格式，xml - xml格式，hl7v2 - HL7v2格式，formData - “form-data”格式"
+          "description": "入参消息体格式，取值：空，json - json格式，xml - xml格式，hl7v2 - HL7v2格式，formData - “form-data”格式",
+          "refType": null
         },
         "inJsonParam": {
           "type": "string",
-          "description": "入参具体字段树形json字符串"
+          "description": "入参具体字段树形json字符串",
+          "refType": null
         },
         "inParamTree": {
           "description": "入参树",
           "originalRef": "ServiceParamTreeDto对象",
-          "$ref": "#/definitions/ServiceParamTreeDto对象"
+          "$ref": "#/definitions/ServiceParamTreeDto对象",
+          "refType": "ServiceParamTreeDto对象"
         },
         "logLevel": {
           "type": "string",
-          "description": "日志级别：all-全链路，entry-入口日志（记录入出参消息，不记录中间步骤日志），entryNoParam-入口日志（不记录入出参消息，不记录中间步骤日志，便于监控统计服务调用耗时与次数等），none-不记录日志"
+          "description": "日志级别：all-全链路，entry-入口日志（记录入出参消息，不记录中间步骤日志），entryNoParam-入口日志（不记录入出参消息，不记录中间步骤日志，便于监控统计服务调用耗时与次数等），none-不记录日志",
+          "refType": null
         },
         "majorVersion": {
           "type": "integer",
           "format": "int32",
-          "description": "主版本号，暂定规则：从1开始，用户根据情况，界面上可手工加一"
+          "description": "主版本号，暂定规则：从1开始，用户根据情况，界面上可手工加一",
+          "refType": null
         },
         "memo": {
-          "type": "string"
+          "type": "string",
+          "refType": null
         },
         "minorVersion": {
           "type": "integer",
           "format": "int32",
-          "description": "次版本号，每次修改时都要加一，生成规则：从1开始，自增数字(从1开始)"
+          "description": "次版本号，每次修改时都要加一，生成规则：从1开始，自增数字(从1开始)",
+          "refType": null
         },
         "mtime": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "refType": null
         },
         "muid": {
           "type": "integer",
-          "format": "int32"
+          "format": "int32",
+          "refType": null
         },
         "name": {
           "type": "string",
-          "description": "服务名称"
-        },
-        "okRespTpl": {
-          "type": "string",
-          "description": "异步模式时，成功响应模板（符合freemarker规范）"
+          "description": "服务名称",
+          "refType": null
         },
         "openMode": {
           "type": "string",
-          "description": "通信模式，取值：sync - 同步，async - 异步"
+          "description": "通信模式，取值：sync - 同步，async - 异步",
+          "refType": null
         },
         "openProtocol": {
           "type": "string",
-          "description": "开放的通信协议，取值：ws（即“Webservice”，默认）、rest-post、rest-get"
+          "description": "开放的通信协议，取值：ws（即“Webservice”，默认）、rest-post、rest-get",
+          "refType": null
         },
         "optType": {
           "type": "string",
-          "description": "操作类型：add-新增类服务，update-修改类服务，delete-删除类服务，query-查询类服务"
+          "description": "操作类型：add-新增类服务，update-修改类服务，delete-删除类服务，query-查询类服务",
+          "refType": null
         },
         "outBodyFormat": {
           "type": "string",
-          "description": "出参消息体格式，取值：空，json - json格式，xml - xml格式，hl7v2 - HL7v2格式"
+          "description": "出参消息体格式，取值：空，json - json格式，xml - xml格式，hl7v2 - HL7v2格式",
+          "refType": null
         },
         "outParamTree": {
           "description": "出参树",
           "originalRef": "ServiceParamTreeDto对象",
-          "$ref": "#/definitions/ServiceParamTreeDto对象"
-        },
-        "queueMode": {
-          "type": "string",
-          "description": "异步模式时，队列类型：normal - 普通队列（默认），order - 顺序队列"
+          "$ref": "#/definitions/ServiceParamTreeDto对象",
+          "refType": "ServiceParamTreeDto对象"
         },
         "routeExecMode": {
           "type": "string",
-          "description": "路由执行模式，取值：parallel - 并行（默认，同时调用所有路由），serial - 串行（按顺序依次调用，一个执行完成后，才会调用下一个）"
+          "description": "路由执行模式，取值：parallel - 并行（默认，同时调用所有路由），serial - 串行（按顺序依次调用，一个执行完成后，才会调用下一个）",
+          "refType": null
         },
         "routeRelation": {
           "type": "string",
-          "description": "路由的条件关系，取值：broadcast - 广播（默认，满足条件的路由都会执行），single - 单路（只会执行满足条件的第一个路由）"
+          "description": "路由的条件关系，取值：broadcast - 广播（默认，满足条件的路由都会执行），single - 单路（只会执行满足条件的第一个路由）",
+          "refType": null
         },
         "serviceMode": {
           "type": "string",
-          "description": "服务模式，取值：hosp - 院标，hlht - 国标(互联互通)，diy-定制(自定义)"
+          "description": "服务模式，取值：hosp - 院标，hlht - 国标(互联互通)，diy-定制(自定义)",
+          "refType": null
         },
         "serviceModeName": {
           "type": "string",
-          "description": "服务模式名称"
+          "description": "服务模式名称",
+          "refType": null
         },
         "sortNo": {
           "type": "integer",
-          "format": "int32"
+          "format": "int32",
+          "refType": null
         },
         "status": {
           "type": "integer",
           "format": "int32",
-          "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布服务定义步骤点击「保存」退出，此服务为「待设计」状态参数设计步骤点击「保存」退出，此服务为「待配置」状态服务配置步骤点击「保存」退出，此服务为「待发布」状态脚本校验步骤点击「完成」退出，此服务为「待发布」状态"
+          "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布服务定义步骤点击「保存」退出，此服务为「待设计」状态参数设计步骤点击「保存」退出，此服务为「待配置提供方」状态服务配置步骤点击「保存」退出，此服务为「待发布」状态脚本校验步骤点击「完成」退出，此服务为「待发布」状态",
+          "refType": null
         },
         "urlPath": {
           "type": "string",
-          "description": "对外开放的url路径，全局唯一"
+          "description": "对外开放的url路径，全局唯一",
+          "refType": null
         },
         "version": {
           "type": "string",
-          "description": "版本号，由主版本号与次版本号拼接而成，英文句号分隔"
+          "description": "版本号，由主版本号与次版本号拼接而成，英文句号分隔",
+          "refType": null
         },
         "workerGroupId": {
           "type": "integer",
           "format": "int32",
-          "description": "引擎分组id，如果有值，则在服务发布时，不可改变引擎分组，关联：sys_worker_group.id"
+          "description": "引擎分组id，如果有值，则在服务发布时，不可改变引擎分组，关联：sys_worker_group.id",
+          "refType": null
         },
         "workerGroupName": {
           "type": "string",
-          "description": "所属引擎类别名称"
+          "description": "所属引擎类别名称",
+          "refType": null
         }
       },
       "title": "ServiceInfoDetailDto对象",
@@ -8684,117 +8823,142 @@
           "items": {
             "originalRef": "TreeNode",
             "$ref": "#/definitions/TreeNode"
-          }
+          },
+          "refType": "TreeNode"
         },
         "createdById": {
           "type": "integer",
           "format": "int64",
-          "description": "创建人id"
+          "description": "创建人id",
+          "refType": null
         },
         "createdByName": {
           "type": "string",
-          "description": "创建人名称"
+          "description": "创建人名称",
+          "refType": null
         },
         "createdTime": {
           "type": "string",
           "format": "date-time",
-          "description": "创建时间"
+          "description": "创建时间",
+          "refType": null
         },
         "dataLength": {
           "type": "integer",
           "format": "int32",
-          "description": "数据长度"
+          "description": "数据长度",
+          "refType": null
         },
         "dataType": {
           "type": "string",
-          "description": "数据类型，Object = 节点,S = 字符型,L = 布尔型,N = 数值型,D = 日期型(格式：YYYYMMDD),DT = 日期时间型(格式：YYYYMMDDThhmmss),T = 时间型(格式：hhmmss)"
+          "description": "数据类型，Object = 节点,S = 字符型,L = 布尔型,N = 数值型,D = 日期型(格式：YYYYMMDD),DT = 日期时间型(格式：YYYYMMDDThhmmss),T = 时间型(格式：hhmmss)",
+          "refType": null
         },
         "dataTypeDesc": {
           "type": "string",
-          "description": "数据类型对应中文描述"
+          "description": "数据类型对应中文描述",
+          "refType": null
         },
         "defaultVal": {
           "type": "string",
-          "description": "默认值"
+          "description": "默认值",
+          "refType": null
         },
         "hasChildren": {
           "type": "boolean",
-          "description": "是否有子节点，true表示有"
+          "description": "是否有子节点，true表示有",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int32",
-          "description": "ID"
+          "description": "ID",
+          "refType": null
         },
         "jsonPath": {
           "type": "string",
-          "description": "参数jsonPath"
+          "description": "参数jsonPath",
+          "refType": null
         },
         "loopFlag": {
           "type": "integer",
           "format": "int32",
-          "description": "是否循环,0=否，1=是"
+          "description": "是否循环,0=否，1=是",
+          "refType": null
         },
         "paramCode": {
           "type": "string",
-          "description": "参数代码"
+          "description": "参数代码",
+          "refType": null
         },
         "paramName": {
           "type": "string",
-          "description": "参数名称"
+          "description": "参数名称",
+          "refType": null
         },
         "paramType": {
           "type": "integer",
           "format": "int32",
-          "description": "参数类型，1=入参，2=出参"
+          "description": "参数类型，1=入参，2=出参",
+          "refType": null
         },
         "parentId": {
           "type": "integer",
           "format": "int32",
-          "description": "父级ID"
+          "description": "父级ID",
+          "refType": null
         },
         "pointLength": {
           "type": "integer",
           "format": "int32",
-          "description": "小数点位数，默认为0，当data_type=N的时候，此字段才有意义"
+          "description": "小数点位数，默认为0，当data_type=N的时候，此字段才有意义",
+          "refType": null
         },
         "remark": {
           "type": "string",
-          "description": "参数描述"
+          "description": "参数描述",
+          "refType": null
         },
         "requiredFlag": {
           "type": "integer",
           "format": "int32",
-          "description": "是否必填,0=否，1=是"
+          "description": "是否必填,0=否，1=是",
+          "refType": null
         },
         "serviceId": {
           "type": "integer",
           "format": "int64",
-          "description": "对应sm_service_info表的id"
+          "description": "对应sm_service_info表的id",
+          "refType": null
         },
         "sort": {
           "type": "integer",
           "format": "int32",
-          "description": "排序"
+          "description": "排序",
+          "refType": null
         },
         "updatedById": {
           "type": "integer",
           "format": "int64",
-          "description": "更新人id"
+          "description": "更新人id",
+          "refType": null
         },
         "updatedByName": {
           "type": "string",
-          "description": "更新人名称"
+          "description": "更新人名称",
+          "refType": null
         },
         "updatedTime": {
           "type": "string",
           "format": "date-time",
-          "description": "更新时间"
+          "description": "更新时间",
+          "refType": null
         },
         "version": {
           "type": "integer",
           "format": "int32",
-          "description": "版本号,可用于乐观锁"
+          "description": "版本号,可用于乐观锁",
+          "refType": null
         }
       },
       "title": "ServiceParamTreeDto对象",
@@ -9520,21 +9684,25 @@
           "items": {
             "originalRef": "TreeNode",
             "$ref": "#/definitions/TreeNode"
-          }
+          },
+          "refType": "TreeNode"
         },
         "hasChildren": {
           "type": "boolean",
-          "description": "是否有子节点，true表示有"
+          "description": "是否有子节点，true表示有",
+          "refType": null
         },
         "id": {
           "type": "integer",
           "format": "int32",
-          "description": "ID"
+          "description": "ID",
+          "refType": null
         },
         "parentId": {
           "type": "integer",
           "format": "int32",
-          "description": "父级ID"
+          "description": "父级ID",
+          "refType": null
         }
       },
       "title": "TreeNode"
@@ -10105,7 +10273,7 @@
       "properties": {
         "code": {
           "type": "string",
-          "description": "常量名"
+          "description": "常量编码"
         },
         "ctime": {
           "type": "string",
@@ -10131,6 +10299,9 @@
           "type": "integer",
           "format": "int32"
         },
+        "name": {
+          "type": "string"
+        },
         "sortNo": {
           "type": "integer",
           "format": "int32",
@@ -10142,71 +10313,6 @@
         }
       },
       "title": "sys_constant表的po对象"
-    },
-    "sys_data_resource表的po对象": {
-      "type": "object",
-      "properties": {
-        "code": {
-          "type": "string",
-          "description": "内码，不对外开放，便于内置一些资源，其他地方需要时，可以引用此内码，适用于导入导出场景"
-        },
-        "ctime": {
-          "type": "string",
-          "format": "date-time",
-          "description": "创建时间"
-        },
-        "cuid": {
-          "type": "integer",
-          "format": "int32",
-          "description": "创建人"
-        },
-        "fileContent": {
-          "type": "string",
-          "description": "资源内容，如果是文字类资源，存放内容，如果是dll、ssl、class、jar等文件，则存放base64内容（byte数组转为base64存放）"
-        },
-        "fileFormat": {
-          "type": "string",
-          "description": "资源格式：xml、json、wsdl、text、html、hl7、dll、class、jar、ssl-certificate"
-        },
-        "fileSchema": {
-          "type": "string",
-          "description": "资源结构定义，如果是json、xml等则存放其定义结构(json)，如果是dll、ssl、class、jar等文件，则存放文件大小等信息(json)"
-        },
-        "id": {
-          "type": "integer",
-          "format": "int32",
-          "description": "主键id"
-        },
-        "memo": {
-          "type": "string",
-          "description": "备注"
-        },
-        "mtime": {
-          "type": "string",
-          "format": "date-time",
-          "description": "修改时间"
-        },
-        "muid": {
-          "type": "integer",
-          "format": "int32",
-          "description": "修改人"
-        },
-        "name": {
-          "type": "string",
-          "description": "资源名称"
-        },
-        "showAtFileUi": {
-          "type": "integer",
-          "format": "int32",
-          "description": "是否在文件管理界面显示，取值：0 - 隐藏，1 - 显示（默认），对于api服务的入出参一般都是隐藏（因为他们在服务管理页面维护）"
-        },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号，默认999999"
-        }
-      },
-      "title": "sys_data_resource表的po对象"
     },
     "sys_data_source表的po对象": {
       "type": "object",
@@ -10563,6 +10669,10 @@
     "sys_worker_group表的po对象": {
       "type": "object",
       "properties": {
+        "code": {
+          "type": "string",
+          "description": "引擎分组代码"
+        },
         "ctime": {
           "type": "string",
           "format": "date-time",
@@ -10594,7 +10704,7 @@
         },
         "name": {
           "type": "string",
-          "description": "分组名"
+          "description": "引擎分组名"
         },
         "sortNo": {
           "type": "integer",
@@ -10915,21 +11025,21 @@
       "type": "object",
       "required": [
         "code",
+        "name",
         "value"
       ],
       "properties": {
         "code": {
           "type": "string",
-          "description": "常量名"
+          "description": "常量编码"
         },
         "memo": {
           "type": "string",
           "description": "备注"
         },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号"
+        "name": {
+          "type": "string",
+          "description": "常量名称"
         },
         "value": {
           "type": "string",
@@ -10944,12 +11054,13 @@
       "required": [
         "code",
         "id",
+        "name",
         "value"
       ],
       "properties": {
         "code": {
           "type": "string",
-          "description": "常量名"
+          "description": "常量编码"
         },
         "id": {
           "type": "integer",
@@ -10959,10 +11070,9 @@
         "memo": {
           "type": "string"
         },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号"
+        "name": {
+          "type": "string",
+          "description": "常量名称"
         },
         "value": {
           "type": "string",
@@ -10977,7 +11087,7 @@
       "properties": {
         "condition": {
           "type": "string",
-          "description": "输入条件(code 或 value)"
+          "description": "输入条件(code 或 name)"
         },
         "current": {
           "type": "integer",
@@ -11002,52 +11112,41 @@
         "categoryId": {
           "type": "integer",
           "format": "int32",
-          "description": "所属服务分组id"
-        },
-        "code": {
-          "type": "string",
-          "description": "服务编码"
+          "description": "所属服务分组id",
+          "refType": null
         },
         "condition": {
           "type": "string",
-          "description": "服务名称或服务code（模糊查询）"
+          "description": "服务名称或服务code（模糊查询）",
+          "refType": null
         },
         "current": {
           "type": "integer",
           "format": "int32",
-          "description": "页码"
-        },
-        "id": {
-          "type": "integer",
-          "format": "int32",
-          "description": "id"
-        },
-        "name": {
-          "type": "string",
-          "description": "服务名称"
+          "description": "页码",
+          "refType": null
         },
         "optType": {
           "type": "string",
-          "description": "操作类型：add-新增类服务，update-修改类服务，delete-删除类服务，query-查询类服务"
+          "description": "操作类型：add-新增类服务，update-修改类服务，delete-删除类服务，query-查询类服务",
+          "refType": null
         },
         "size": {
           "type": "integer",
           "format": "int32",
-          "description": "页大小"
+          "description": "页大小",
+          "refType": null
         },
         "startIndex": {
           "type": "integer",
-          "format": "int32"
+          "format": "int32",
+          "refType": null
         },
         "status": {
           "type": "integer",
           "format": "int32",
-          "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布"
-        },
-        "workerGroupId": {
-          "type": "integer",
-          "format": "int32",
-          "description": "引擎分组id"
+          "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布",
+          "refType": null
         }
       },
       "title": "分页查询对象",
@@ -12695,10 +12794,9 @@
     "数据源-新增": {
       "type": "object",
       "required": [
-        "autoCommit",
         "connectionTimeout",
+        "driverJarId",
         "idleTimeout",
-        "keepaliveTime",
         "maxLifetime",
         "maxPoolSize",
         "minIdle",
@@ -12706,31 +12804,14 @@
         "type"
       ],
       "properties": {
-        "autoCommit": {
-          "type": "integer",
-          "format": "int32",
-          "description": "是否自动提交池中返回的连接，取值：0-否，1-是（默认）"
-        },
-        "code": {
-          "type": "string",
-          "description": "内码，不对外开放，便于内置一些数据源，其他地方可以引用此内码"
-        },
         "connectionTimeout": {
           "type": "integer",
           "format": "int32",
           "description": "程序向连接池中请求连接时，单位：毫秒。默认：30000"
         },
-        "dataSourceClassName": {
-          "type": "string",
-          "description": "数据源类名"
-        },
         "dbName": {
           "type": "string",
           "description": "库名"
-        },
-        "driverClassName": {
-          "type": "string",
-          "description": "驱动类名"
         },
         "driverJarId": {
           "type": "integer",
@@ -12746,28 +12827,15 @@
           "type": "string",
           "description": "数据源ip地址"
         },
-        "jdbcConnection": {
-          "type": "string",
-          "description": "jdbc连接串，前端通过aes加密传到后端，后端解密后明文存库"
-        },
-        "keepaliveTime": {
-          "type": "integer",
-          "format": "int32",
-          "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
-        },
         "maxLifetime": {
           "type": "integer",
           "format": "int32",
-          "description": "该属性用于控制连接在池中的最大生存时间，超过该时间强制逐出，连接池向数据申请新的连接进行补充，单位：毫秒。默认:1800000"
+          "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
         },
         "maxPoolSize": {
           "type": "integer",
           "format": "int32",
           "description": "连接池中最多支持多少个活动连接，默认：CPU核心数的两倍"
-        },
-        "memo": {
-          "type": "string",
-          "description": "备注"
         },
         "minIdle": {
           "type": "integer",
@@ -12786,15 +12854,6 @@
           "type": "integer",
           "format": "int32",
           "description": "数据源端口号"
-        },
-        "schemaName": {
-          "type": "string",
-          "description": "模式名"
-        },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号"
         },
         "testQuerySql": {
           "type": "string",
@@ -12815,11 +12874,9 @@
     "数据源-更新": {
       "type": "object",
       "required": [
-        "autoCommit",
         "connectionTimeout",
         "id",
         "idleTimeout",
-        "keepaliveTime",
         "maxLifetime",
         "maxPoolSize",
         "minIdle",
@@ -12827,31 +12884,14 @@
         "type"
       ],
       "properties": {
-        "autoCommit": {
-          "type": "integer",
-          "format": "int32",
-          "description": "是否自动提交池中返回的连接，取值：0-否，1-是（默认）"
-        },
-        "code": {
-          "type": "string",
-          "description": "内码，不对外开放，便于内置一些数据源，其他地方可以引用此内码"
-        },
         "connectionTimeout": {
           "type": "integer",
           "format": "int32",
           "description": "程序向连接池中请求连接时，单位：毫秒。默认：30000"
         },
-        "dataSourceClassName": {
-          "type": "string",
-          "description": "数据源类名"
-        },
         "dbName": {
           "type": "string",
           "description": "库名"
-        },
-        "driverClassName": {
-          "type": "string",
-          "description": "驱动类名"
         },
         "driverJarId": {
           "type": "integer",
@@ -12872,28 +12912,15 @@
           "type": "string",
           "description": "数据源ip地址"
         },
-        "jdbcConnection": {
-          "type": "string",
-          "description": "jdbc连接串，前端通过aes加密传到后端，后端解密后明文存库"
-        },
-        "keepaliveTime": {
-          "type": "integer",
-          "format": "int32",
-          "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
-        },
         "maxLifetime": {
           "type": "integer",
           "format": "int32",
-          "description": "该属性用于控制连接在池中的最大生存时间，超过该时间强制逐出，连接池向数据申请新的连接进行补充，单位：毫秒。默认:1800000"
+          "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
         },
         "maxPoolSize": {
           "type": "integer",
           "format": "int32",
           "description": "连接池中最多支持多少个活动连接，默认：CPU核心数的两倍"
-        },
-        "memo": {
-          "type": "string",
-          "description": "备注"
         },
         "minIdle": {
           "type": "integer",
@@ -12912,15 +12939,6 @@
           "type": "integer",
           "format": "int32",
           "description": "数据源端口号"
-        },
-        "schemaName": {
-          "type": "string",
-          "description": "模式名"
-        },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号"
         },
         "testQuerySql": {
           "type": "string",
@@ -12950,10 +12968,6 @@
           "format": "int32",
           "description": "页码"
         },
-        "dbName": {
-          "type": "string",
-          "description": "库名"
-        },
         "size": {
           "type": "integer",
           "format": "int32",
@@ -12962,106 +12976,37 @@
         "startIndex": {
           "type": "integer",
           "format": "int32"
-        },
-        "type": {
-          "type": "string",
-          "description": "数据库类型：SQLServer，Oracle，MySQL，PgSQL等"
         }
       },
       "title": "数据源查询条件"
     },
-    "数据资源-新增": {
+    "数据资源列表返回对象": {
       "type": "object",
-      "required": [
-        "name"
-      ],
       "properties": {
-        "code": {
+        "ctime": {
           "type": "string",
-          "description": "内码，不对外开放，便于内置一些资源，其他地方需要时，可以引用此内码，适用于导入导出场景"
-        },
-        "fileContent": {
-          "type": "string",
-          "description": "资源内容，如果是文字类资源，存放内容，如果是dll、ssl、class、jar等文件，则存放base64内容（byte数组转为base64存放）"
+          "format": "date-time",
+          "description": "上传时间"
         },
         "fileFormat": {
           "type": "string",
           "description": "资源格式：xml、json、wsdl、text、html、hl7、dll、class、jar、ssl-certificate"
         },
-        "fileSchema": {
+        "fileSize": {
           "type": "string",
-          "description": "资源结构定义，如果是json、xml等则存放其定义结构(json)，如果是dll、ssl、class、jar等文件，则存放文件大小等信息(json)"
-        },
-        "memo": {
-          "type": "string",
-          "description": "备注"
-        },
-        "name": {
-          "type": "string",
-          "description": "资源名称"
-        },
-        "showAtFileUi": {
-          "type": "integer",
-          "format": "int32",
-          "description": "是否在文件管理界面显示，取值：0 - 隐藏，1 - 显示（默认），对于api服务的入出参一般都是隐藏（因为他们在服务管理页面维护）"
-        },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号，默认999999"
-        }
-      },
-      "title": "数据资源-新增",
-      "description": "数据资源-新增"
-    },
-    "数据资源-更新": {
-      "type": "object",
-      "required": [
-        "name"
-      ],
-      "properties": {
-        "code": {
-          "type": "string",
-          "description": "内码，不对外开放，便于内置一些资源，其他地方需要时，可以引用此内码，适用于导入导出场景"
-        },
-        "fileContent": {
-          "type": "string",
-          "description": "资源内容，如果是文字类资源，存放内容，如果是dll、ssl、class、jar等文件，则存放base64内容（byte数组转为base64存放）"
-        },
-        "fileFormat": {
-          "type": "string",
-          "description": "资源格式：xml、json、wsdl、text、html、hl7、dll、class、jar、ssl-certificate"
-        },
-        "fileSchema": {
-          "type": "string",
-          "description": "资源结构定义，如果是json、xml等则存放其定义结构(json)，如果是dll、ssl、class、jar等文件，则存放文件大小等信息(json)"
+          "description": "文件内容大小"
         },
         "id": {
           "type": "integer",
           "format": "int32",
           "description": "主键id"
         },
-        "memo": {
-          "type": "string",
-          "description": "备注"
-        },
         "name": {
           "type": "string",
           "description": "资源名称"
-        },
-        "showAtFileUi": {
-          "type": "integer",
-          "format": "int32",
-          "description": "是否在文件管理界面显示，取值：0 - 隐藏，1 - 显示（默认），对于api服务的入出参一般都是隐藏（因为他们在服务管理页面维护）"
-        },
-        "sortNo": {
-          "type": "integer",
-          "format": "int32",
-          "description": "排序号，默认999999"
         }
       },
-      "title": "数据资源-更新",
-      "description": "数据资源-更新"
+      "title": "数据资源列表返回对象"
     },
     "新增提供方-值": {
       "type": "object",
@@ -13354,31 +13299,6 @@
       },
       "title": "服务定义",
       "description": "服务定义"
-    },
-    "服务监控-面板查询": {
-      "type": "object",
-      "properties": {
-        "appId": {
-          "type": "string",
-          "description": "应用ID"
-        },
-        "end": {
-          "type": "string",
-          "format": "date-time",
-          "description": "结束时间"
-        },
-        "serviceId": {
-          "type": "string",
-          "description": "API服务ID"
-        },
-        "start": {
-          "type": "string",
-          "format": "date-time",
-          "description": "开始时间"
-        }
-      },
-      "title": "服务监控-面板查询",
-      "description": "服务监控-面板查询"
     },
     "服务订阅-查询服务列表": {
       "type": "object",
@@ -13992,6 +13912,11 @@
         "name": {
           "type": "string",
           "description": "服务名称"
+        },
+        "status": {
+          "type": "integer",
+          "format": "int32",
+          "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布"
         }
       },
       "title": "路由图谱返回对象",
