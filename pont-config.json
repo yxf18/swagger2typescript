@@ -1,0 +1,9 @@
+{
+  "originUrl": "http://192.168.0.220:16261/v2/api-docs",
+  "templatePath": "./pontTemplate",
+  "outDir": "y",
+  "mocks": {
+    "enable": false
+  },
+  "templateType": "fetch"
+}
