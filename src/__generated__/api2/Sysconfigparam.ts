@@ -9,35 +9,41 @@
  * ---------------------------------------------------------------
  */
 
-import { UpdateValueUsingPostParams } from './data-contracts';
+import {
+  QueryObjectsForSystemControlParameters,
+  R,
+  RVo2,
+  UpdateValueUsingPostParams,
+} from './data-contracts';
 import { ContentType, HttpClient, RequestParams } from './http-client';
 
 export class Sysconfigparam<SecurityDataType = unknown> extends HttpClient<SecurityDataType> {
   /**
    * No description
    *
-   * @tags 【系统控制参数】
+   * @tags SystemControlParameters
    * @name ListUsingPost3
    * @summary 获取参数列表
    * @request POST:/sysconfigparam/list
    */
-  listUsingPost3 = (params: RequestParams = {}) =>
-    this.request<void, void>({
+  listUsingPost3 = (queryDto: QueryObjectsForSystemControlParameters, params: RequestParams = {}) =>
+    this.request<RVo2, void>({
       path: `/sysconfigparam/list`,
       method: 'POST',
+      body: queryDto,
       type: ContentType.Json,
       ...params,
     });
   /**
    * No description
    *
-   * @tags 【系统控制参数】
+   * @tags SystemControlParameters
    * @name UpdateValueUsingPost
    * @summary 更改参数值
    * @request POST:/sysconfigparam/updateValue
    */
   updateValueUsingPost = (query: UpdateValueUsingPostParams, params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<R, void>({
       path: `/sysconfigparam/updateValue`,
       method: 'POST',
       query: query,

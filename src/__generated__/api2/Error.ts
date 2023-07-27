@@ -21,7 +21,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request GET:/error
    */
   errorUsingGet = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'GET',
       ...params,
@@ -35,7 +35,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request HEAD:/error
    */
   errorUsingHead = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'HEAD',
       type: ContentType.Json,
@@ -50,7 +50,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request POST:/error
    */
   errorUsingPost = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'POST',
       type: ContentType.Json,
@@ -65,7 +65,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request PUT:/error
    */
   errorUsingPut = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'PUT',
       type: ContentType.Json,
@@ -80,7 +80,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request DELETE:/error
    */
   errorUsingDelete = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'DELETE',
       ...params,
@@ -94,7 +94,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request OPTIONS:/error
    */
   errorUsingOptions = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'OPTIONS',
       type: ContentType.Json,
@@ -109,7 +109,7 @@ export class Error<SecurityDataType = unknown> extends HttpClient<SecurityDataTy
    * @request PATCH:/error
    */
   errorUsingPatch = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<Record<string, object>, void>({
       path: `/error`,
       method: 'PATCH',
       type: ContentType.Json,

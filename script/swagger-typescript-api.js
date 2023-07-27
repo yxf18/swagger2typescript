@@ -7,7 +7,8 @@ const PATH_TO_OUTPUT_DIR_TEMPLATES = path.resolve(
   './src/__generated__/api-templates',
 );
 const PATH_TO_OUTPUT_DIR_API = path.resolve(process.cwd(), './src/__generated__/api');
-const INPUT = 'http://192.168.0.220:16261/v2/api-docs';
+// const URL = 'http://192.168.0.220:16261/v2/api-docs';
+const INPUT = path.resolve(process.cwd(), './src/swagger.json');
 
 /* NOTE: all fields are optional expect one of `input`, `url`, `spec` */
 generateApi({
@@ -15,9 +16,9 @@ generateApi({
   // set to `false` to prevent the tool from writing to disk
   output: PATH_TO_OUTPUT_DIR_API,
   // url: 'http://api.com/swagger.json',
-  url: INPUT,
-  //   input: path.resolve(process.cwd(), './foo/swagger.json'),
-  //   input: path.resolve(process.cwd(), '../src/swagger.json'),
+  // url: URL,
+  input: INPUT,
+    // input: path.resolve(process.cwd(), './src/swagger1.json'),
   //   spec: {
   //     swagger: '2.0',
   //     info: {
@@ -94,24 +95,24 @@ generateApi({
 })
   .then(({ files, configuration }) => {
     console.log('[ files ]', files);
-    files.forEach(({ fileContent, name }) => {
-      //   fs.writeFile(path, fileContent);
-      fs.writeFile('./test.ts', fileContent, (err) => {
-        console.log('[ err ]', err);
-      });
-    });
+    // files.forEach(({ fileContent, name }) => {
+    //   //   fs.writeFile(path, fileContent);
+    //   fs.writeFile('./test2.ts', fileContent, (err) => {
+    //     console.log('[ err ]', err);
+    //   });
+    // });
   })
   .catch((e) => console.error(e));
 
 // return;
-generateTemplates({
-  cleanOutput: false,
-  //   input: path.resolve(process.cwd(), '../src/swagger.json'),
-  input: INPUT,
-  output: PATH_TO_OUTPUT_DIR_TEMPLATES,
-  //   httpClientType: "fetch",
-  httpClientType: 'axios',
-  modular: false,
-  silent: false,
-  rewrite: false,
-});
+// generateTemplates({
+//   cleanOutput: false,
+//   //   input: path.resolve(process.cwd(), '../src/swagger.json'),
+//   input: INPUT,
+//   output: PATH_TO_OUTPUT_DIR_TEMPLATES,
+//   //   httpClientType: "fetch",
+//   httpClientType: 'axios',
+//   modular: false,
+//   silent: false,
+//   rewrite: false,
+// });

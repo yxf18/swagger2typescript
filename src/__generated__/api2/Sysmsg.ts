@@ -9,35 +9,41 @@
  * ---------------------------------------------------------------
  */
 
-import { MarkReadByIdUsingPostParams } from './data-contracts';
+import {
+  MarkReadByIdUsingPostParams,
+  QueryObjectsForSystemMessages,
+  RString,
+  RVo,
+} from './data-contracts';
 import { ContentType, HttpClient, RequestParams } from './http-client';
 
 export class Sysmsg<SecurityDataType = unknown> extends HttpClient<SecurityDataType> {
   /**
    * No description
    *
-   * @tags 【系统消息】
+   * @tags SystemMessage
    * @name ListUsingPost6
    * @summary 获取当前用户的消息列表
    * @request POST:/sysmsg/list
    */
-  listUsingPost6 = (params: RequestParams = {}) =>
-    this.request<void, void>({
+  listUsingPost6 = (msgQueryDto: QueryObjectsForSystemMessages, params: RequestParams = {}) =>
+    this.request<RVo, void>({
       path: `/sysmsg/list`,
       method: 'POST',
+      body: msgQueryDto,
       type: ContentType.Json,
       ...params,
     });
   /**
    * No description
    *
-   * @tags 【系统消息】
+   * @tags SystemMessage
    * @name MarkReadByIdUsingPost
    * @summary 根据用户消息表id，设为已读
    * @request POST:/sysmsg/markReadById
    */
   markReadByIdUsingPost = (query: MarkReadByIdUsingPostParams, params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<RString, void>({
       path: `/sysmsg/markReadById`,
       method: 'POST',
       query: query,
@@ -47,13 +53,13 @@ export class Sysmsg<SecurityDataType = unknown> extends HttpClient<SecurityDataT
   /**
    * No description
    *
-   * @tags 【系统消息】
+   * @tags SystemMessage
    * @name MarkReadForCurrentUserUsingPost
    * @summary 将当前用户的消息，都设为已读
    * @request POST:/sysmsg/markReadForCurrentUser
    */
   markReadForCurrentUserUsingPost = (params: RequestParams = {}) =>
-    this.request<void, void>({
+    this.request<RString, void>({
       path: `/sysmsg/markReadForCurrentUser`,
       method: 'POST',
       type: ContentType.Json,

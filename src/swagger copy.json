@@ -670,6 +670,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -721,6 +722,7 @@
             "description": "parentId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -812,6 +814,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -956,6 +959,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1003,6 +1007,7 @@
             "description": "serviceId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1100,6 +1105,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1147,6 +1153,7 @@
             "description": "serviceId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1494,6 +1501,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1591,6 +1599,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1738,6 +1747,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1782,6 +1792,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1829,6 +1840,7 @@
             "description": "serviceId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1870,6 +1882,7 @@
             "description": "serviceId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -1917,6 +1930,7 @@
             "description": "serviceId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2031,6 +2045,7 @@
             "description": "serviceId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2128,6 +2143,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2222,6 +2238,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2313,6 +2330,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2357,6 +2375,7 @@
             "description": "所属服务类别id，对应sm_category表的数据id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "code",
@@ -2371,6 +2390,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "logLevel",
@@ -2406,6 +2426,7 @@
             "description": "操作类型：add-新增类服务，update-修改类服务，delete-删除类服务，query-查询类服务",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "serviceMode",
@@ -2481,6 +2502,7 @@
             "description": "应用系统id",
             "required": false,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "serviceId",
@@ -2488,6 +2510,7 @@
             "description": "服务id",
             "required": false,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2535,6 +2558,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2632,6 +2656,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2726,6 +2751,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2767,6 +2793,7 @@
             "description": "status",
             "required": false,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2808,6 +2835,7 @@
             "description": "status",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2849,6 +2877,7 @@
             "description": "appSupplierId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -2893,6 +2922,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "status",
@@ -2900,6 +2930,7 @@
             "description": "status",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3047,6 +3078,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3098,6 +3130,7 @@
             "description": "parentId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3189,6 +3222,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3333,6 +3367,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3482,6 +3517,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3626,6 +3662,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3720,6 +3757,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3864,6 +3902,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -3958,6 +3997,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4102,6 +4142,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4196,6 +4237,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4390,6 +4432,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4434,6 +4477,7 @@
             "description": "limit",
             "required": false,
             "type": "integer",
+            "format": "int64"
           },
           {
             "name": "page",
@@ -4441,6 +4485,7 @@
             "description": "page",
             "required": false,
             "type": "integer",
+            "format": "int64"
           },
           {
             "name": "parentId",
@@ -4448,6 +4493,7 @@
             "description": "parentId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "status",
@@ -4455,6 +4501,7 @@
             "description": "status",
             "required": false,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "type",
@@ -4462,6 +4509,7 @@
             "description": "type",
             "required": false,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4509,6 +4557,7 @@
             "description": "parentId",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "status",
@@ -4516,6 +4565,7 @@
             "description": "status",
             "required": false,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "type",
@@ -4523,6 +4573,7 @@
             "description": "type",
             "required": false,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4564,6 +4615,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4608,6 +4660,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "status",
@@ -4615,6 +4668,7 @@
             "description": "status",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4762,6 +4816,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -4856,6 +4911,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5000,6 +5056,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5094,6 +5151,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5238,6 +5296,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5332,6 +5391,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5476,6 +5536,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5570,6 +5631,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -5614,6 +5676,7 @@
             "description": "id",
             "required": true,
             "type": "integer",
+            "format": "int32"
           },
           {
             "name": "status",
@@ -5621,6 +5684,7 @@
             "description": "status",
             "required": true,
             "type": "integer",
+            "format": "int32"
           }
         ],
         "responses": {
@@ -6125,6 +6189,7 @@
             "description": "用户的消息主键id",
             "required": true,
             "type": "integer",
+            "format": "int32",
             "allowEmptyValue": false
           }
         ],
@@ -6213,10 +6278,12 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -6231,10 +6298,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -6243,6 +6312,7 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "name": {
@@ -6251,6 +6321,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "parentName": {
@@ -6259,6 +6330,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -6281,6 +6353,7 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "hasChildren": {
@@ -6289,6 +6362,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -6297,6 +6371,7 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "name": {
@@ -6305,9 +6380,11 @@
         },
         "objType": {
           "type": "integer",
+          "format": "int32"
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "parentName": {
@@ -6316,6 +6393,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -6334,10 +6412,12 @@
       "properties": {
         "appCategoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用类别id"
         },
         "appSupplierId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供商id"
         },
         "appVersion": {
@@ -6362,6 +6442,7 @@
         },
         "organizationId": {
           "type": "integer",
+          "format": "int32",
           "description": "机构id"
         },
         "secret": {
@@ -6374,10 +6455,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         }
       },
@@ -6392,6 +6475,7 @@
         },
         "appCategoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用类别id"
         },
         "appSupplier": {
@@ -6400,6 +6484,7 @@
         },
         "appSupplierId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供商id"
         },
         "appVersion": {
@@ -6412,14 +6497,17 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "mdmId": {
@@ -6432,10 +6520,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -6448,6 +6538,7 @@
         },
         "organizationId": {
           "type": "integer",
+          "format": "int32",
           "description": "机构id"
         },
         "secret": {
@@ -6460,10 +6551,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         }
       },
@@ -6490,10 +6583,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "email": {
@@ -6502,6 +6597,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "mdmId": {
@@ -6514,10 +6610,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -6530,10 +6628,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用"
         }
       },
@@ -6570,6 +6670,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "mdmId": {
@@ -6590,10 +6691,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用"
         }
       },
@@ -6612,14 +6715,17 @@
       "properties": {
         "appCategoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用类别id"
         },
         "appSupplierId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供商id"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主鍵"
         },
         "mdmId": {
@@ -6636,6 +6742,7 @@
         },
         "organizationId": {
           "type": "integer",
+          "format": "int32",
           "description": "机构id"
         },
         "shortName": {
@@ -6644,10 +6751,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         }
       },
@@ -6675,10 +6784,12 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -6693,10 +6804,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -6705,6 +6818,7 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "name": {
@@ -6713,6 +6827,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "parentName": {
@@ -6721,6 +6836,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -6743,6 +6859,7 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "hasChildren": {
@@ -6751,6 +6868,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -6759,6 +6877,7 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "name": {
@@ -6767,9 +6886,11 @@
         },
         "objType": {
           "type": "integer",
+          "format": "int32"
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "parentName": {
@@ -6778,6 +6899,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -6792,6 +6914,7 @@
         },
         "failQty": {
           "type": "integer",
+          "format": "int32",
           "description": "失败量"
         },
         "requestAvg": {
@@ -6800,10 +6923,12 @@
         },
         "requestQty": {
           "type": "integer",
+          "format": "int32",
           "description": "请求量"
         },
         "successQty": {
           "type": "integer",
+          "format": "int32",
           "description": "成功量"
         },
         "successRate": {
@@ -6950,6 +7075,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级机构id"
         },
         "shortName": {
@@ -6958,14 +7084,17 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "type": {
           "type": "integer",
+          "format": "int32",
           "description": "机构类型：0-机构(默认)，1-科室"
         }
       },
@@ -6980,10 +7109,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "hasChildren": {
@@ -6992,6 +7123,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "mdmId": {
@@ -7004,10 +7136,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -7016,6 +7150,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级机构id"
         },
         "parentName": {
@@ -7028,14 +7163,17 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "type": {
           "type": "integer",
+          "format": "int32",
           "description": "机构类型：0-机构(默认)，1-科室"
         }
       },
@@ -7058,10 +7196,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "hasChildren": {
@@ -7070,6 +7210,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "ID"
         },
         "mdmId": {
@@ -7082,10 +7223,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -7094,9 +7237,11 @@
         },
         "objType": {
           "type": "integer",
+          "format": "int32"
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级ID"
         },
         "parentName": {
@@ -7109,14 +7254,17 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "type": {
           "type": "integer",
+          "format": "int32",
           "description": "机构类型：0-机构(默认)，1-科室"
         }
       },
@@ -7127,6 +7275,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "object"
@@ -7142,6 +7291,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "AppCategoryResDto",
@@ -7158,6 +7308,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "AppResDto",
@@ -7174,6 +7325,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "AppSupplierResDto",
@@ -7190,6 +7342,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "CategoryResDto",
@@ -7206,6 +7359,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "DashboardResDto",
@@ -7222,6 +7376,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7241,6 +7396,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7260,6 +7416,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7279,6 +7436,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7298,6 +7456,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7317,6 +7476,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7336,6 +7496,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7355,6 +7516,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7374,6 +7536,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7393,6 +7556,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7412,6 +7576,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7431,6 +7596,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7450,6 +7616,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7469,6 +7636,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7488,6 +7656,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7507,6 +7676,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7526,6 +7696,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7545,6 +7716,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7564,6 +7736,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7583,6 +7756,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7602,6 +7776,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7621,6 +7796,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "array",
@@ -7640,6 +7816,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "object",
@@ -7662,6 +7839,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "OrganizationResDto",
@@ -7678,6 +7856,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "ServiceInfoDetailDto对象",
@@ -7694,6 +7873,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "ServiceParamResDto",
@@ -7710,6 +7890,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "ServiceParamTreeResDto",
@@ -7726,6 +7907,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "SysDataSyncTaskResDto",
@@ -7742,6 +7924,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "SysLogo对象",
@@ -7758,6 +7941,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "SysWorkerNodeResDto",
@@ -7774,6 +7958,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "UserInfo",
@@ -7790,6 +7975,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sm_category表的po对象",
@@ -7806,6 +7992,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sm_common_pre_processor表的po对象",
@@ -7822,6 +8009,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sm_common_result_processor表的po对象",
@@ -7838,6 +8026,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sm_my_pre_processor表的po对象",
@@ -7854,6 +8043,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sm_my_result_processor表的po对象",
@@ -7870,6 +8060,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sm_subscription表的po对象",
@@ -7886,6 +8077,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "string"
@@ -7901,6 +8093,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_app_category表的po对象",
@@ -7917,6 +8110,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_app_supplier表的po对象",
@@ -7933,6 +8127,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_app表的po对象",
@@ -7949,6 +8144,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_constant表的po对象",
@@ -7965,6 +8161,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_data_resource表的po对象",
@@ -7981,6 +8178,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_data_source表的po对象",
@@ -7997,6 +8195,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_data_sync_task表的po对象",
@@ -8013,6 +8212,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_organization表的po对象",
@@ -8029,6 +8229,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_third_service表的po对象",
@@ -8045,6 +8246,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_worker_group表的po对象",
@@ -8061,6 +8263,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "sys_worker_node表的po对象",
@@ -8077,6 +8280,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "InteractionLog-详情",
@@ -8093,6 +8297,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "BasicPagingResultObjectSystemAuditLogPoObject",
@@ -8109,6 +8314,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "BasicPagingResultObjectSystemMessageVoObject",
@@ -8125,6 +8331,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "BasicPagingResultObjectSystemConfigurationParameterVoObject",
@@ -8141,6 +8348,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "TheProviderWebserviceReturnsTheObject",
@@ -8157,6 +8365,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "ProviderConfigurationReturnObject",
@@ -8173,6 +8382,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "LoginInitializationVoObject",
@@ -8189,6 +8399,7 @@
       "properties": {
         "code": {
           "type": "integer",
+          "format": "int32"
         },
         "data": {
           "originalRef": "RoutingGraphReturnObject",
@@ -8205,14 +8416,17 @@
       "properties": {
         "canDelete": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可删除：0-否，1-是，对于一些系统固化的api，禁止在前端删除"
         },
         "canEdit": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可编辑：0-否，1-是，对于一些系统固化的api，禁止在前端修改"
         },
         "categoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "所属分组ID，关联：sm_category.id"
         },
         "categoryName": {
@@ -8225,9 +8439,11 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "failRespTpl": {
           "type": "string",
@@ -8235,6 +8451,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "inBodyFormat": {
@@ -8256,6 +8473,7 @@
         },
         "majorVersion": {
           "type": "integer",
+          "format": "int32",
           "description": "主版本号，暂定规则：从1开始，用户根据情况，界面上可手工加一"
         },
         "memo": {
@@ -8263,13 +8481,16 @@
         },
         "minorVersion": {
           "type": "integer",
+          "format": "int32",
           "description": "次版本号，每次修改时都要加一，生成规则：从1开始，自增数字(从1开始)"
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "name": {
           "type": "string",
@@ -8322,9 +8543,11 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布服务定义步骤点击「保存」退出，此服务为「待设计」状态参数设计步骤点击「保存」退出，此服务为「待配置」状态服务配置步骤点击「保存」退出，此服务为「待发布」状态脚本校验步骤点击「完成」退出，此服务为「待发布」状态"
         },
         "urlPath": {
@@ -8337,6 +8560,7 @@
         },
         "workerGroupId": {
           "type": "integer",
+          "format": "int32",
           "description": "引擎分组id，如果有值，则在服务发布时，不可改变引擎分组，关联：sys_worker_group.id"
         },
         "workerGroupName": {
@@ -8376,14 +8600,17 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "isAttr": {
           "type": "integer",
+          "format": "int32",
           "description": "是否属性,0=否(非xml默认为0)，1=是，仅适用于xml节点属性"
         },
         "loopFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否循环,0=否，1=是"
         },
         "memo": {
@@ -8404,6 +8631,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "上级节点id,0表示根级"
         },
         "parentParamName": {
@@ -8416,6 +8644,7 @@
         },
         "requiredFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否必填,0=否，1=是"
         },
         "sampleVal": {
@@ -8424,6 +8653,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id,对应sm_service_info表的id"
         },
         "serviceName": {
@@ -8458,6 +8688,7 @@
         },
         "createdById": {
           "type": "integer",
+          "format": "int64",
           "description": "创建人id"
         },
         "createdByName": {
@@ -8466,10 +8697,12 @@
         },
         "createdTime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "dataLength": {
           "type": "integer",
+          "format": "int32",
           "description": "数据长度"
         },
         "dataType": {
@@ -8490,6 +8723,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "ID"
         },
         "jsonPath": {
@@ -8498,6 +8732,7 @@
         },
         "loopFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否循环,0=否，1=是"
         },
         "paramCode": {
@@ -8510,14 +8745,17 @@
         },
         "paramType": {
           "type": "integer",
+          "format": "int32",
           "description": "参数类型，1=入参，2=出参"
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级ID"
         },
         "pointLength": {
           "type": "integer",
+          "format": "int32",
           "description": "小数点位数，默认为0，当data_type=N的时候，此字段才有意义"
         },
         "remark": {
@@ -8526,18 +8764,22 @@
         },
         "requiredFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否必填,0=否，1=是"
         },
         "serviceId": {
           "type": "integer",
+          "format": "int64",
           "description": "对应sm_service_info表的id"
         },
         "sort": {
           "type": "integer",
+          "format": "int32",
           "description": "排序"
         },
         "updatedById": {
           "type": "integer",
+          "format": "int64",
           "description": "更新人id"
         },
         "updatedByName": {
@@ -8546,10 +8788,12 @@
         },
         "updatedTime": {
           "type": "string",
+          "format": "date-time",
           "description": "更新时间"
         },
         "version": {
           "type": "integer",
+          "format": "int32",
           "description": "版本号,可用于乐观锁"
         }
       },
@@ -8625,6 +8869,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "memo": {
@@ -8637,10 +8882,12 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -8652,12 +8899,15 @@
       "properties": {
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -8666,12 +8916,15 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "retryIndex": {
           "type": "integer",
+          "format": "int32",
           "description": "重试次数，从1开始，最大30次，重试间隔30秒"
         },
         "sourceContext": {
@@ -8688,10 +8941,12 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "任务状态：1-待同步，2-同步中，3-同步成功，4-同步失败"
         },
         "workerId": {
           "type": "integer",
+          "format": "int32",
           "description": "工作节点id"
         },
         "workerName": {
@@ -8726,6 +8981,7 @@
         },
         "createdById": {
           "type": "integer",
+          "format": "int64",
           "description": "创建人id"
         },
         "createdByName": {
@@ -8734,10 +8990,12 @@
         },
         "createdTime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "deleted": {
           "type": "integer",
+          "format": "int64",
           "description": "删除标记"
         },
         "deptCode": {
@@ -8746,10 +9004,12 @@
         },
         "deptId": {
           "type": "integer",
+          "format": "int64",
           "description": "部门id"
         },
         "deptIscenter": {
           "type": "integer",
+          "format": "int32",
           "description": "中心机构【0分中心 1中心机构】"
         },
         "deptLogo": {
@@ -8762,6 +9022,7 @@
         },
         "deptType": {
           "type": "integer",
+          "format": "int32",
           "description": "组织类型【0机构 1科室】"
         },
         "email": {
@@ -8774,10 +9035,12 @@
         },
         "orderNum": {
           "type": "integer",
+          "format": "int32",
           "description": "显示顺序"
         },
         "parentId": {
           "type": "integer",
+          "format": "int64",
           "description": "父部门id"
         },
         "phone": {
@@ -8790,6 +9053,7 @@
         },
         "updatedById": {
           "type": "integer",
+          "format": "int64",
           "description": "更新人id"
         },
         "updatedByName": {
@@ -8798,10 +9062,12 @@
         },
         "updatedTime": {
           "type": "string",
+          "format": "date-time",
           "description": "更新时间"
         },
         "version": {
           "type": "integer",
+          "format": "int32",
           "description": "版本号,可用于乐观锁"
         }
       },
@@ -8812,6 +9078,7 @@
       "properties": {
         "createdTime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "footerLogo": {
@@ -8824,6 +9091,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int64",
           "description": "主键id"
         },
         "sysCode": {
@@ -8832,10 +9100,12 @@
         },
         "updatedTime": {
           "type": "string",
+          "format": "date-time",
           "description": "更新时间"
         },
         "version": {
           "type": "integer",
+          "format": "int32",
           "description": "版本号,可用于乐观锁"
         }
       },
@@ -8846,6 +9116,7 @@
       "properties": {
         "createdById": {
           "type": "integer",
+          "format": "int64",
           "description": "创建人id"
         },
         "createdByName": {
@@ -8854,10 +9125,12 @@
         },
         "createdTime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "dataPower": {
           "type": "integer",
+          "format": "int32",
           "description": "0全部机构数据 1部分机构数据 2所在机构数据"
         },
         "dataPowerDept": {
@@ -8870,6 +9143,7 @@
         },
         "deleted": {
           "type": "integer",
+          "format": "int64",
           "description": "删除标记"
         },
         "deptCheckStrictly": {
@@ -8881,6 +9155,7 @@
           "description": "部门组（数据权限）",
           "items": {
             "type": "integer",
+            "format": "int64"
           }
         },
         "flag": {
@@ -8896,6 +9171,7 @@
           "description": "菜单组",
           "items": {
             "type": "integer",
+            "format": "int64"
           }
         },
         "menuSysCode": {
@@ -8908,6 +9184,7 @@
         },
         "roleId": {
           "type": "integer",
+          "format": "int64",
           "description": "角色ID"
         },
         "roleKey": {
@@ -8920,10 +9197,12 @@
         },
         "roleSort": {
           "type": "integer",
+          "format": "int32",
           "description": "显示顺序"
         },
         "roleType": {
           "type": "integer",
+          "format": "int32",
           "description": "0系统角色  1项目角色"
         },
         "status": {
@@ -8932,6 +9211,7 @@
         },
         "updatedById": {
           "type": "integer",
+          "format": "int64",
           "description": "更新人id"
         },
         "updatedByName": {
@@ -8940,10 +9220,12 @@
         },
         "updatedTime": {
           "type": "string",
+          "format": "date-time",
           "description": "更新时间"
         },
         "version": {
           "type": "integer",
+          "format": "int32",
           "description": "版本号,可用于乐观锁"
         }
       },
@@ -8958,6 +9240,7 @@
         },
         "createdById": {
           "type": "integer",
+          "format": "int64",
           "description": "创建人id"
         },
         "createdByName": {
@@ -8966,6 +9249,7 @@
         },
         "createdTime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "curDept": {
@@ -8980,6 +9264,7 @@
         },
         "deleted": {
           "type": "integer",
+          "format": "int64",
           "description": "删除标记"
         },
         "dept": {
@@ -8989,6 +9274,7 @@
         },
         "deptId": {
           "type": "integer",
+          "format": "int64",
           "description": "部门ID"
         },
         "email": {
@@ -9001,6 +9287,7 @@
         },
         "loginDate": {
           "type": "string",
+          "format": "date-time",
           "description": "最后登录时间"
         },
         "loginIp": {
@@ -9041,6 +9328,7 @@
         },
         "updatedById": {
           "type": "integer",
+          "format": "int64",
           "description": "更新人id"
         },
         "updatedByName": {
@@ -9049,10 +9337,12 @@
         },
         "updatedTime": {
           "type": "string",
+          "format": "date-time",
           "description": "更新时间"
         },
         "userId": {
           "type": "integer",
+          "format": "int64",
           "description": "用户ID"
         },
         "userName": {
@@ -9069,6 +9359,7 @@
         },
         "version": {
           "type": "integer",
+          "format": "int32",
           "description": "版本号,可用于乐观锁"
         },
         "waterContent": {
@@ -9087,18 +9378,22 @@
       "properties": {
         "apiMaxNo": {
           "type": "integer",
+          "format": "int32",
           "description": "额定承载的最大api数量，如果为0，表示不能运行api，如果大于0，则是最大承载数量，如果为空，则不限制api数量"
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "ip": {
@@ -9111,18 +9406,22 @@
         },
         "lastHeartbeatOkTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上一次心跳正常的时间"
         },
         "lastHeartbeatStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳测试结果状态：0-失败，1-正常"
         },
         "lastHeartbeatTime": {
           "type": "string",
+          "format": "date-time",
           "description": "最近心跳测试时间"
         },
         "loadWeight": {
           "type": "integer",
+          "format": "int32",
           "description": "负载均衡权重，如果为空则不限制，节点类型为工作节点时有效，取值范围：0-100，如果为0，表示不接受请求（例如某些机器专门用于定时任务）"
         },
         "memo": {
@@ -9131,10 +9430,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -9147,34 +9448,42 @@
         },
         "onlineStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "在线状态：0-离线，1-在线"
         },
         "portApi": {
           "type": "integer",
+          "format": "int32",
           "description": "用于集成引擎，此字段存放的是对外开放的http协议端口号"
         },
         "portBoot": {
           "type": "integer",
+          "format": "int32",
           "description": "用于存放Springboot的web容器端口"
         },
         "recentHeartbeatFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳失败的次数，从最近一次心跳正常之后开始计数"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "startTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上线时间，结合当前时间可以计算运行时长"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "stopTime": {
           "type": "string",
+          "format": "date-time",
           "description": "离线时间，结合上线时间可以计算运行时长"
         },
         "syncMode": {
@@ -9187,10 +9496,12 @@
         },
         "visible": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可见：0-否，1-是(默认)"
         },
         "workerGroupId": {
           "type": "integer",
+          "format": "int32",
           "description": "引擎分组id"
         },
         "workerGroupName": {
@@ -9217,10 +9528,12 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "ID"
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级ID"
         }
       },
@@ -9300,14 +9613,17 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9316,10 +9632,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -9328,10 +9646,12 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -9346,12 +9666,15 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9359,9 +9682,11 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "name": {
           "type": "string",
@@ -9369,6 +9694,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "type": {
@@ -9387,16 +9713,20 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "isErr": {
           "type": "integer",
+          "format": "int32",
           "description": "是否异常处理器：0-否，1-是(默认0)"
         },
         "memo": {
@@ -9404,9 +9734,11 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "name": {
           "type": "string",
@@ -9414,6 +9746,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "type": {
@@ -9432,12 +9765,15 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9445,9 +9781,11 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "name": {
           "type": "string",
@@ -9455,6 +9793,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "type": {
@@ -9473,12 +9812,15 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9486,9 +9828,11 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "name": {
           "type": "string",
@@ -9496,6 +9840,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "type": {
@@ -9510,34 +9855,42 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用系统id"
         },
         "applyTime": {
           "type": "string",
+          "format": "date-time",
           "description": "申请时间"
         },
         "applyUid": {
           "type": "integer",
+          "format": "int32",
           "description": "申请者id"
         },
         "auditTime": {
           "type": "string",
+          "format": "date-time",
           "description": "审核时间"
         },
         "auditUid": {
           "type": "integer",
+          "format": "int32",
           "description": "审核者id"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0=待审核(默认)，1=已通过，2=未通过"
         }
       },
@@ -9552,10 +9905,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9564,6 +9919,7 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "name": {
@@ -9572,10 +9928,12 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级分组id，0(默认)表示根级分组"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -9602,10 +9960,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "email": {
@@ -9614,6 +9974,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "mdmId": {
@@ -9626,10 +9987,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -9642,10 +10005,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用"
         }
       },
@@ -9656,10 +10021,12 @@
       "properties": {
         "appCategoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用类别id"
         },
         "appSupplierId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供商id"
         },
         "appVersion": {
@@ -9672,14 +10039,17 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "mdmId": {
@@ -9692,10 +10062,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -9704,6 +10076,7 @@
         },
         "organizationId": {
           "type": "integer",
+          "format": "int32",
           "description": "机构id"
         },
         "secret": {
@@ -9716,10 +10089,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         }
       },
@@ -9734,12 +10109,15 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9747,12 +10125,15 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "value": {
@@ -9771,10 +10152,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "fileContent": {
@@ -9791,6 +10174,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9799,10 +10183,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -9811,10 +10197,12 @@
         },
         "showAtFileUi": {
           "type": "integer",
+          "format": "int32",
           "description": "是否在文件管理界面显示，取值：0 - 隐藏，1 - 显示（默认），对于api服务的入出参一般都是隐藏（因为他们在服务管理页面维护）"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -9825,6 +10213,7 @@
       "properties": {
         "autoCommit": {
           "type": "integer",
+          "format": "int32",
           "description": "是否自动提交池中返回的连接，取值：0-否，1-是（默认）"
         },
         "code": {
@@ -9833,13 +10222,16 @@
         },
         "connectionTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "程序向连接池中请求连接时，单位：毫秒。默认：30000"
         },
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "dataSourceClassName": {
           "type": "string",
@@ -9855,6 +10247,7 @@
         },
         "driverJarId": {
           "type": "integer",
+          "format": "int32",
           "description": "驱动jar的文件id"
         },
         "extJdbcParams": {
@@ -9863,10 +10256,12 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "idleTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "空闲时间，单位：毫秒。默认:600000"
         },
         "ip": {
@@ -9879,14 +10274,17 @@
         },
         "keepaliveTime": {
           "type": "integer",
+          "format": "int32",
           "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
         },
         "maxLifetime": {
           "type": "integer",
+          "format": "int32",
           "description": "该属性用于控制连接在池中的最大生存时间，超过该时间强制逐出，连接池向数据申请新的连接进行补充，单位：毫秒。默认:1800000"
         },
         "maxPoolSize": {
           "type": "integer",
+          "format": "int32",
           "description": "连接池中最多支持多少个活动连接，默认：CPU核心数的两倍"
         },
         "memo": {
@@ -9895,13 +10293,16 @@
         },
         "minIdle": {
           "type": "integer",
+          "format": "int32",
           "description": "回收空闲连接时，将保证最少连接数，默认：CPU核心数的两倍"
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "name": {
           "type": "string",
@@ -9913,10 +10314,12 @@
         },
         "port": {
           "type": "integer",
+          "format": "int32",
           "description": "数据源端口号"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "testQuerySql": {
@@ -9939,12 +10342,15 @@
       "properties": {
         "ctime": {
           "type": "string",
+          "format": "date-time"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -9953,12 +10359,15 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time"
         },
         "muid": {
           "type": "integer",
+          "format": "int32"
         },
         "retryIndex": {
           "type": "integer",
+          "format": "int32",
           "description": "重试次数，从1开始，最大30次，重试间隔30秒"
         },
         "sourceContext": {
@@ -9975,10 +10384,12 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "任务状态：1-待同步，2-同步中，3-同步成功，4-同步失败"
         },
         "workerId": {
           "type": "integer",
+          "format": "int32",
           "description": "工作节点id"
         }
       },
@@ -9993,14 +10404,17 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "mdmId": {
@@ -10013,10 +10427,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -10025,6 +10441,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级机构id"
         },
         "shortName": {
@@ -10033,14 +10450,17 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "type": {
           "type": "integer",
+          "format": "int32",
           "description": "机构类型：0-机构(默认)，1-科室"
         }
       },
@@ -10051,6 +10471,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用id"
         },
         "code": {
@@ -10063,26 +10484,32 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "execTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "执行超时，单位：秒"
         },
         "fuseDuration": {
           "type": "integer",
+          "format": "int32",
           "description": "熔断时长，单位：秒"
         },
         "fuseFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": " 熔断异常数，即连续失败多少次才会触发熔断"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "inBodyFormat": {
@@ -10095,10 +10522,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -10111,14 +10540,17 @@
         },
         "retryInterval": {
           "type": "integer",
+          "format": "int32",
           "description": "重试间隔，单位：秒"
         },
         "retryMax": {
           "type": "integer",
+          "format": "int32",
           "description": "最大重试次数，如果为-1，则表示一直重试"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "type": {
@@ -10133,14 +10565,17 @@
       "properties": {
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -10149,10 +10584,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -10161,6 +10598,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -10171,18 +10609,22 @@
       "properties": {
         "apiMaxNo": {
           "type": "integer",
+          "format": "int32",
           "description": "额定承载的最大api数量，如果为0，表示不能运行api，如果大于0，则是最大承载数量，如果为空，则不限制api数量"
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建人"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "ip": {
@@ -10195,18 +10637,22 @@
         },
         "lastHeartbeatOkTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上一次心跳正常的时间"
         },
         "lastHeartbeatStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳测试结果状态：0-失败，1-正常"
         },
         "lastHeartbeatTime": {
           "type": "string",
+          "format": "date-time",
           "description": "最近心跳测试时间"
         },
         "loadWeight": {
           "type": "integer",
+          "format": "int32",
           "description": "负载均衡权重，如果为空则不限制，节点类型为工作节点时有效，取值范围：0-100，如果为0，表示不接受请求（例如某些机器专门用于定时任务）"
         },
         "memo": {
@@ -10215,10 +10661,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改人"
         },
         "name": {
@@ -10231,34 +10679,42 @@
         },
         "onlineStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "在线状态：0-离线，1-在线"
         },
         "portApi": {
           "type": "integer",
+          "format": "int32",
           "description": "用于集成引擎，此字段存放的是对外开放的http协议端口号"
         },
         "portBoot": {
           "type": "integer",
+          "format": "int32",
           "description": "用于存放Springboot的web容器端口"
         },
         "recentHeartbeatFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳失败的次数，从最近一次心跳正常之后开始计数"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "startTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上线时间，结合当前时间可以计算运行时长"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "stopTime": {
           "type": "string",
+          "format": "date-time",
           "description": "离线时间，结合上线时间可以计算运行时长"
         },
         "syncMode": {
@@ -10271,10 +10727,12 @@
         },
         "visible": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可见：0-否，1-是(默认)"
         },
         "workerGroupId": {
           "type": "integer",
+          "format": "int32",
           "description": "引擎分组id"
         }
       },
@@ -10285,6 +10743,7 @@
       "properties": {
         "consumerId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用id"
         },
         "consumerIp": {
@@ -10293,6 +10752,7 @@
         },
         "haveRetry": {
           "type": "integer",
+          "format": "int32",
           "description": "是否有重试，取值：0-否，1-是，当result_code=1时，如果此字段为1，说明最终结果为成功但过程中有异常或错误"
         },
         "inMsg": {
@@ -10313,18 +10773,22 @@
         },
         "reqTime": {
           "type": "string",
+          "format": "date-time",
           "description": "请求时间，入口步骤收到请求的时间，精确到毫秒，示例：2022-02-10 17:15:09.034"
         },
         "respTime": {
           "type": "string",
+          "format": "date-time",
           "description": "响应时间，出口步骤返回响应的时间，精确到毫秒，示例：2022-02-10 17:15:09.034"
         },
         "resultCode": {
           "type": "integer",
+          "format": "int32",
           "description": "结果"
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id"
         },
         "serviceName": {
@@ -10337,6 +10801,7 @@
         },
         "timeCost": {
           "type": "integer",
+          "format": "int32",
           "description": "处理时长，单位：毫秒"
         },
         "traceId": {
@@ -10352,6 +10817,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用id"
         },
         "condition": {
@@ -10360,33 +10826,41 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "end": {
           "type": "string",
+          "format": "date-time",
           "description": "结束时间"
         },
         "resultCode": {
           "type": "integer",
+          "format": "int32",
           "description": "结果代码，取值：0-失败，1-成功"
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "API服务id"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "start": {
           "type": "string",
+          "format": "date-time",
           "description": "开始时间"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "timeCost": {
           "type": "integer",
+          "format": "int32",
           "description": "处理时长，单位：毫秒"
         }
       },
@@ -10398,18 +10872,22 @@
       "properties": {
         "consumerId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用id"
         },
         "reqTime": {
           "type": "string",
+          "format": "date-time",
           "description": "请求时间，入口步骤收到请求的时间，精确到毫秒，示例：2022-02-10 17:15:09.034"
         },
         "resultCode": {
           "type": "integer",
+          "format": "int32",
           "description": "结果"
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id"
         },
         "serviceName": {
@@ -10422,6 +10900,7 @@
         },
         "timeCost": {
           "type": "integer",
+          "format": "int32",
           "description": "处理时长，单位：毫秒"
         },
         "traceId": {
@@ -10449,6 +10928,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "value": {
@@ -10473,6 +10953,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -10480,6 +10961,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "value": {
@@ -10499,14 +10981,17 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         }
       },
       "title": "GlobalConstantQueryCriteria"
@@ -10516,6 +11001,7 @@
       "properties": {
         "categoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "所属服务分组id"
         },
         "code": {
@@ -10528,10 +11014,12 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "name": {
@@ -10544,17 +11032,21 @@
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "服务状态：1=待设计，2=待配置，3=待发布，4=已发布"
         },
         "workerGroupId": {
           "type": "integer",
+          "format": "int32",
           "description": "引擎分组id"
         }
       },
@@ -10570,6 +11062,7 @@
         },
         "disabled": {
           "type": "integer",
+          "format": "int32",
           "description": "是否禁用选项：0-否，1-是"
         },
         "ext": {
@@ -10578,6 +11071,7 @@
         },
         "isDefault": {
           "type": "integer",
+          "format": "int32",
           "description": "是否默认选项：0-否，1-是"
         },
         "name": {
@@ -10596,6 +11090,7 @@
         },
         "disabled": {
           "type": "integer",
+          "format": "int32",
           "description": "是否禁用选项：0-否，1-是"
         },
         "ext": {
@@ -10604,6 +11099,7 @@
         },
         "isDefault": {
           "type": "integer",
+          "format": "int32",
           "description": "是否默认选项：0-否，1-是"
         },
         "name": {
@@ -10659,10 +11155,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用"
         }
       },
@@ -10682,17 +11180,21 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用"
         }
       },
@@ -10715,10 +11217,12 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "mdmId": {
@@ -10735,6 +11239,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "父级机构id"
         },
         "shortName": {
@@ -10743,21 +11248,26 @@
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "type": {
           "type": "integer",
+          "format": "int32",
           "description": "机构类型：0-机构(默认)，1-科室"
         }
       },
@@ -10776,6 +11286,7 @@
         },
         "total": {
           "type": "integer",
+          "format": "int32",
           "description": "总记录数"
         }
       },
@@ -10794,6 +11305,7 @@
         },
         "total": {
           "type": "integer",
+          "format": "int32",
           "description": "总记录数"
         }
       },
@@ -10812,6 +11324,7 @@
         },
         "total": {
           "type": "integer",
+          "format": "int32",
           "description": "总记录数"
         }
       },
@@ -10863,6 +11376,7 @@
       "properties": {
         "apiMaxNo": {
           "type": "integer",
+          "format": "int32",
           "description": "额定承载的最大api数量，如果为0，表示不能运行api，如果大于0，则是最大承载数量，如果为空，则不限制api数量"
         },
         "ip": {
@@ -10875,18 +11389,22 @@
         },
         "lastHeartbeatOkTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上一次心跳正常的时间"
         },
         "lastHeartbeatStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳测试结果状态：0-失败，1-正常"
         },
         "lastHeartbeatTime": {
           "type": "string",
+          "format": "date-time",
           "description": "最近心跳测试时间"
         },
         "loadWeight": {
           "type": "integer",
+          "format": "int32",
           "description": "负载均衡权重，如果为空则不限制，节点类型为工作节点时有效，取值范围：0-100，如果为0，表示不接受请求（例如某些机器专门用于定时任务）"
         },
         "memo": {
@@ -10903,34 +11421,42 @@
         },
         "onlineStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "在线状态：0-离线，1-在线"
         },
         "portApi": {
           "type": "integer",
+          "format": "int32",
           "description": "用于集成引擎，此字段存放的是对外开放的http协议端口号"
         },
         "portBoot": {
           "type": "integer",
+          "format": "int32",
           "description": "用于存放Springboot的web容器端口"
         },
         "recentHeartbeatFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳失败的次数，从最近一次心跳正常之后开始计数"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "startTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上线时间，结合当前时间可以计算运行时长"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "stopTime": {
           "type": "string",
+          "format": "date-time",
           "description": "离线时间，结合上线时间可以计算运行时长"
         },
         "syncMode": {
@@ -10943,10 +11469,12 @@
         },
         "visible": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可见：0-否，1-是(默认)"
         },
         "workerGroupId": {
           "type": "integer",
+          "format": "int32",
           "description": "引擎分组id"
         }
       },
@@ -10969,10 +11497,12 @@
       "properties": {
         "apiMaxNo": {
           "type": "integer",
+          "format": "int32",
           "description": "额定承载的最大api数量，如果为0，表示不能运行api，如果大于0，则是最大承载数量，如果为空，则不限制api数量"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "ip": {
@@ -10985,18 +11515,22 @@
         },
         "lastHeartbeatOkTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上一次心跳正常的时间"
         },
         "lastHeartbeatStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳测试结果状态：0-失败，1-正常"
         },
         "lastHeartbeatTime": {
           "type": "string",
+          "format": "date-time",
           "description": "最近心跳测试时间"
         },
         "loadWeight": {
           "type": "integer",
+          "format": "int32",
           "description": "负载均衡权重，如果为空则不限制，节点类型为工作节点时有效，取值范围：0-100，如果为0，表示不接受请求（例如某些机器专门用于定时任务）"
         },
         "memo": {
@@ -11013,34 +11547,42 @@
         },
         "onlineStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "在线状态：0-离线，1-在线"
         },
         "portApi": {
           "type": "integer",
+          "format": "int32",
           "description": "用于集成引擎，此字段存放的是对外开放的http协议端口号"
         },
         "portBoot": {
           "type": "integer",
+          "format": "int32",
           "description": "用于存放Springboot的web容器端口"
         },
         "recentHeartbeatFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳失败的次数，从最近一次心跳正常之后开始计数"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "startTime": {
           "type": "string",
+          "format": "date-time",
           "description": "上线时间，结合当前时间可以计算运行时长"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "stopTime": {
           "type": "string",
+          "format": "date-time",
           "description": "离线时间，结合上线时间可以计算运行时长"
         },
         "syncMode": {
@@ -11053,10 +11595,12 @@
         },
         "visible": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可见：0-否，1-是(默认)"
         },
         "workerGroupId": {
           "type": "integer",
+          "format": "int32",
           "description": "引擎分组id"
         }
       },
@@ -11079,6 +11623,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -11094,6 +11639,7 @@
       "properties": {
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "memo": {
@@ -11106,6 +11652,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -11121,14 +11668,17 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         }
       },
       "title": "WorkNodeGroupingQueryCriteria"
@@ -11142,10 +11692,12 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "lastHeartbeatStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "最近心跳测试结果状态：0-失败，1-正常"
         },
         "nodeType": {
@@ -11154,17 +11706,21 @@
         },
         "onlineStatus": {
           "type": "integer",
+          "format": "int32",
           "description": "在线状态：0-离线，1-在线"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用(默认)"
         },
         "syncMode": {
@@ -11183,14 +11739,17 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         }
       },
       "title": "ApplicationSystemGrouping"
@@ -11203,6 +11762,7 @@
           "description": "appId列表",
           "items": {
             "type": "integer",
+            "format": "int32"
           }
         },
         "condition": {
@@ -11211,6 +11771,7 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "lazy": {
@@ -11219,13 +11780,16 @@
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "0-停用，1-在用"
         }
       },
@@ -11250,6 +11814,7 @@
           "description": "要删除的参数id集合",
           "items": {
             "type": "integer",
+            "format": "int32"
           }
         }
       },
@@ -11261,6 +11826,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "endpointUrl": {
@@ -11273,6 +11839,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "inBodyFormat": {
@@ -11293,6 +11860,7 @@
         },
         "preId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性预处理器id"
         },
         "resultAttr": {
@@ -11305,6 +11873,7 @@
         },
         "resultId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性结果处理器id"
         },
         "resultMatchType": {
@@ -11321,6 +11890,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "serviceName": {
@@ -11329,6 +11899,7 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         },
         "type": {
@@ -11374,6 +11945,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "endpointUrl": {
@@ -11390,6 +11962,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id, 新增不传值, 更新传值"
         },
         "inBodyFormat": {
@@ -11410,6 +11983,7 @@
         },
         "preId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性预处理器id"
         },
         "queryParams": {
@@ -11430,6 +12004,7 @@
         },
         "resultId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性结果处理器id"
         },
         "resultMatchType": {
@@ -11446,10 +12021,12 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         },
         "type": {
@@ -11472,6 +12049,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "bodyOneParam": {
@@ -11501,6 +12079,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id, 新增不传值, 更新传值"
         },
         "inBodyFormat": {
@@ -11521,6 +12100,7 @@
         },
         "preId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性预处理器id"
         },
         "queryParams": {
@@ -11541,6 +12121,7 @@
         },
         "resultId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性结果处理器id"
         },
         "resultMatchType": {
@@ -11557,10 +12138,12 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         },
         "type": {
@@ -11581,14 +12164,17 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "dsId": {
           "type": "integer",
+          "format": "int32",
           "description": "数据源id"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id, 新增不传值, 更新传值"
         },
         "params": {
@@ -11601,6 +12187,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "spName": {
@@ -11627,6 +12214,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "endpointUrl": {
@@ -11635,6 +12223,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id, 新增不传值, 更新传值"
         },
         "outBodyFormat": {
@@ -11643,6 +12232,7 @@
         },
         "preId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性预处理器id"
         },
         "resultAttr": {
@@ -11655,6 +12245,7 @@
         },
         "resultId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性结果处理器id"
         },
         "resultMatchType": {
@@ -11671,6 +12262,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "sqlConfigurations": {
@@ -11683,6 +12275,7 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         },
         "type": {
@@ -11708,6 +12301,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "endpointUrl": {
@@ -11720,6 +12314,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id, 新增不传值, 更新传值"
         },
         "inBodyFormat": {
@@ -11736,6 +12331,7 @@
         },
         "preId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性预处理器id"
         },
         "resultAttr": {
@@ -11748,6 +12344,7 @@
         },
         "resultId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性结果处理器id"
         },
         "resultMatchType": {
@@ -11764,10 +12361,12 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         },
         "type": {
@@ -11791,10 +12390,12 @@
         },
         "dsId": {
           "type": "integer",
+          "format": "int32",
           "description": "数据源id"
         },
         "isTrans": {
           "type": "integer",
+          "format": "int32",
           "description": "是否开启总事务：0-否，1-是，用于将所有Sql脚本放在一个事务中控制"
         },
         "scriptContent": {
@@ -11845,6 +12446,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "提供方id"
         },
         "bodyOneParam": {
@@ -11874,6 +12476,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "inBodyFormat": {
@@ -11898,6 +12501,7 @@
         },
         "preId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性预处理器id"
         },
         "queryParams": {
@@ -11918,6 +12522,7 @@
         },
         "resultId": {
           "type": "integer",
+          "format": "int32",
           "description": "个性结果处理器id"
         },
         "resultMatchType": {
@@ -11934,6 +12539,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务ID"
         },
         "serviceName": {
@@ -11942,6 +12548,7 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         },
         "type": {
@@ -11968,6 +12575,7 @@
         },
         "retryIndex": {
           "type": "integer",
+          "format": "int32",
           "description": "重试次数，从1开始，最大30次，重试间隔30秒"
         },
         "sourceContext": {
@@ -11984,10 +12592,12 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "任务状态：1-待同步，2-同步中，3-同步成功，4-同步失败"
         },
         "workerId": {
           "type": "integer",
+          "format": "int32",
           "description": "工作节点id"
         }
       },
@@ -12007,6 +12617,7 @@
       "properties": {
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "memo": {
@@ -12015,6 +12626,7 @@
         },
         "retryIndex": {
           "type": "integer",
+          "format": "int32",
           "description": "重试次数，从1开始，最大30次，重试间隔30秒"
         },
         "sourceContext": {
@@ -12031,10 +12643,12 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "任务状态：1-待同步，2-同步中，3-同步成功，4-同步失败"
         },
         "workerId": {
           "type": "integer",
+          "format": "int32",
           "description": "工作节点id"
         }
       },
@@ -12050,10 +12664,12 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "sourceType": {
@@ -12062,6 +12678,7 @@
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "status": {
           "type": "string",
@@ -12069,6 +12686,7 @@
         },
         "workerId": {
           "type": "integer",
+          "format": "int32",
           "description": "工作节点id"
         }
       },
@@ -12090,6 +12708,7 @@
       "properties": {
         "autoCommit": {
           "type": "integer",
+          "format": "int32",
           "description": "是否自动提交池中返回的连接，取值：0-否，1-是（默认）"
         },
         "code": {
@@ -12098,6 +12717,7 @@
         },
         "connectionTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "程序向连接池中请求连接时，单位：毫秒。默认：30000"
         },
         "dataSourceClassName": {
@@ -12114,10 +12734,12 @@
         },
         "driverJarId": {
           "type": "integer",
+          "format": "int32",
           "description": "驱动jar的文件id"
         },
         "idleTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "空闲时间，单位：毫秒。默认:600000"
         },
         "ip": {
@@ -12130,14 +12752,17 @@
         },
         "keepaliveTime": {
           "type": "integer",
+          "format": "int32",
           "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
         },
         "maxLifetime": {
           "type": "integer",
+          "format": "int32",
           "description": "该属性用于控制连接在池中的最大生存时间，超过该时间强制逐出，连接池向数据申请新的连接进行补充，单位：毫秒。默认:1800000"
         },
         "maxPoolSize": {
           "type": "integer",
+          "format": "int32",
           "description": "连接池中最多支持多少个活动连接，默认：CPU核心数的两倍"
         },
         "memo": {
@@ -12146,6 +12771,7 @@
         },
         "minIdle": {
           "type": "integer",
+          "format": "int32",
           "description": "回收空闲连接时，将保证最少连接数，默认：CPU核心数的两倍"
         },
         "name": {
@@ -12158,6 +12784,7 @@
         },
         "port": {
           "type": "integer",
+          "format": "int32",
           "description": "数据源端口号"
         },
         "schemaName": {
@@ -12166,6 +12793,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "testQuerySql": {
@@ -12201,6 +12829,7 @@
       "properties": {
         "autoCommit": {
           "type": "integer",
+          "format": "int32",
           "description": "是否自动提交池中返回的连接，取值：0-否，1-是（默认）"
         },
         "code": {
@@ -12209,6 +12838,7 @@
         },
         "connectionTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "程序向连接池中请求连接时，单位：毫秒。默认：30000"
         },
         "dataSourceClassName": {
@@ -12225,14 +12855,17 @@
         },
         "driverJarId": {
           "type": "integer",
+          "format": "int32",
           "description": "驱动jar的文件id"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "idleTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "空闲时间，单位：毫秒。默认:600000"
         },
         "ip": {
@@ -12245,14 +12878,17 @@
         },
         "keepaliveTime": {
           "type": "integer",
+          "format": "int32",
           "description": "跟数据库保持心跳连接的间隔，单位：毫秒。默认：30000"
         },
         "maxLifetime": {
           "type": "integer",
+          "format": "int32",
           "description": "该属性用于控制连接在池中的最大生存时间，超过该时间强制逐出，连接池向数据申请新的连接进行补充，单位：毫秒。默认:1800000"
         },
         "maxPoolSize": {
           "type": "integer",
+          "format": "int32",
           "description": "连接池中最多支持多少个活动连接，默认：CPU核心数的两倍"
         },
         "memo": {
@@ -12261,6 +12897,7 @@
         },
         "minIdle": {
           "type": "integer",
+          "format": "int32",
           "description": "回收空闲连接时，将保证最少连接数，默认：CPU核心数的两倍"
         },
         "name": {
@@ -12273,6 +12910,7 @@
         },
         "port": {
           "type": "integer",
+          "format": "int32",
           "description": "数据源端口号"
         },
         "schemaName": {
@@ -12281,6 +12919,7 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "testQuerySql": {
@@ -12308,6 +12947,7 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "dbName": {
@@ -12316,10 +12956,12 @@
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "type": {
           "type": "string",
@@ -12360,10 +13002,12 @@
         },
         "showAtFileUi": {
           "type": "integer",
+          "format": "int32",
           "description": "是否在文件管理界面显示，取值：0 - 隐藏，1 - 显示（默认），对于api服务的入出参一般都是隐藏（因为他们在服务管理页面维护）"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -12394,6 +13038,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "memo": {
@@ -12406,10 +13051,12 @@
         },
         "showAtFileUi": {
           "type": "integer",
+          "format": "int32",
           "description": "是否在文件管理界面显示，取值：0 - 隐藏，1 - 显示（默认），对于api服务的入出参一般都是隐藏（因为他们在服务管理页面维护）"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         }
       },
@@ -12489,10 +13136,12 @@
         },
         "isAttr": {
           "type": "integer",
+          "format": "int32",
           "description": "是否属性,0=否(非xml默认为0)，1=是，仅适用于xml节点属性"
         },
         "loopFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否循环,0=否，1=是"
         },
         "memo": {
@@ -12517,6 +13166,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "上级节点id,0表示根级"
         },
         "pointLength": {
@@ -12525,6 +13175,7 @@
         },
         "requiredFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否必填,0=否，1=是"
         },
         "sampleVal": {
@@ -12533,6 +13184,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id,对应sm_service_info表的id"
         },
         "valDictCode": {
@@ -12575,14 +13227,17 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "isAttr": {
           "type": "integer",
+          "format": "int32",
           "description": "是否属性,0=否(非xml默认为0)，1=是，仅适用于xml节点属性"
         },
         "loopFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否循环,0=否，1=是"
         },
         "memo": {
@@ -12603,6 +13258,7 @@
         },
         "parentId": {
           "type": "integer",
+          "format": "int32",
           "description": "上级节点id,0表示根级"
         },
         "pointLength": {
@@ -12611,6 +13267,7 @@
         },
         "requiredFlag": {
           "type": "integer",
+          "format": "int32",
           "description": "是否必填,0=否，1=是"
         },
         "sampleVal": {
@@ -12619,6 +13276,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id,对应sm_service_info表的id"
         },
         "valDictCode": {
@@ -12650,6 +13308,7 @@
       "properties": {
         "categoryId": {
           "type": "integer",
+          "format": "int32",
           "description": "所属服务类别id，对应sm_category表的数据id"
         },
         "code": {
@@ -12705,6 +13364,7 @@
         },
         "end": {
           "type": "string",
+          "format": "date-time",
           "description": "结束时间"
         },
         "serviceId": {
@@ -12713,6 +13373,7 @@
         },
         "start": {
           "type": "string",
+          "format": "date-time",
           "description": "开始时间"
         }
       },
@@ -12728,14 +13389,17 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         }
       },
       "title": "ServiceSubscriptionQueryServiceList",
@@ -12790,6 +13454,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用id"
         },
         "code": {
@@ -12802,14 +13467,17 @@
         },
         "execTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "执行超时，单位：秒"
         },
         "fuseDuration": {
           "type": "integer",
+          "format": "int32",
           "description": "熔断时长，单位：秒"
         },
         "fuseFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": " 熔断异常数，即连续失败多少次才会触发熔断"
         },
         "inBodyFormat": {
@@ -12830,14 +13498,17 @@
         },
         "retryInterval": {
           "type": "integer",
+          "format": "int32",
           "description": "重试间隔，单位：秒"
         },
         "retryMax": {
           "type": "integer",
+          "format": "int32",
           "description": "最大重试次数，如果为-1，则表示一直重试"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "type": {
@@ -12858,6 +13529,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "应用id"
         },
         "code": {
@@ -12870,18 +13542,22 @@
         },
         "execTimeout": {
           "type": "integer",
+          "format": "int32",
           "description": "执行超时，单位：秒"
         },
         "fuseDuration": {
           "type": "integer",
+          "format": "int32",
           "description": "熔断时长，单位：秒"
         },
         "fuseFailCount": {
           "type": "integer",
+          "format": "int32",
           "description": " 熔断异常数，即连续失败多少次才会触发熔断"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "id"
         },
         "inBodyFormat": {
@@ -12902,14 +13578,17 @@
         },
         "retryInterval": {
           "type": "integer",
+          "format": "int32",
           "description": "重试间隔，单位：秒"
         },
         "retryMax": {
           "type": "integer",
+          "format": "int32",
           "description": "最大重试次数，如果为-1，则表示一直重试"
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号，默认999999"
         },
         "type": {
@@ -12932,14 +13611,17 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "type": {
           "type": "string",
@@ -12957,10 +13639,12 @@
         },
         "cost": {
           "type": "integer",
+          "format": "int64",
           "description": "执行时长(毫秒)"
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "method": {
@@ -12969,6 +13653,7 @@
         },
         "operTime": {
           "type": "string",
+          "format": "date-time",
           "description": "操作时间"
         },
         "operUrl": {
@@ -12989,6 +13674,7 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态（0-成功，1-失败）"
         },
         "title": {
@@ -13011,6 +13697,7 @@
         },
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "name": {
@@ -13019,10 +13706,12 @@
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         }
       },
       "title": "QueryObjectsForSystemControlParameters"
@@ -13032,25 +13721,31 @@
       "properties": {
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "endTime": {
           "type": "string",
+          "format": "date-time",
           "description": "结束时间"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "startTime": {
           "type": "string",
+          "format": "date-time",
           "description": "开始时间"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态（0-成功，1-失败）"
         },
         "username": {
@@ -13069,10 +13764,12 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id，用户消息表主键id"
         },
         "publishTime": {
           "type": "string",
+          "format": "date-time",
           "description": "消息发布时间"
         },
         "publishUsername": {
@@ -13081,10 +13778,12 @@
         },
         "readTime": {
           "type": "string",
+          "format": "date-time",
           "description": "消息阅读时间"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "消息状态：0 - 未读，1 - 已读"
         },
         "summary": {
@@ -13103,25 +13802,31 @@
       "properties": {
         "current": {
           "type": "integer",
+          "format": "int32",
           "description": "页码"
         },
         "endTime": {
           "type": "string",
+          "format": "date-time",
           "description": "结束时间"
         },
         "size": {
           "type": "integer",
+          "format": "int32",
           "description": "页大小"
         },
         "startIndex": {
           "type": "integer",
+          "format": "int32"
         },
         "startTime": {
           "type": "string",
+          "format": "date-time",
           "description": "开始时间"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "阅读状态：0-未读，1-已读"
         }
       },
@@ -13144,10 +13849,12 @@
         },
         "ctime": {
           "type": "string",
+          "format": "date-time",
           "description": "创建时间"
         },
         "cuid": {
           "type": "integer",
+          "format": "int32",
           "description": "创建者id"
         },
         "dropdownItems": {
@@ -13167,10 +13874,12 @@
         },
         "mtime": {
           "type": "string",
+          "format": "date-time",
           "description": "修改时间"
         },
         "muid": {
           "type": "integer",
+          "format": "int32",
           "description": "修改者id"
         },
         "name": {
@@ -13183,10 +13892,12 @@
         },
         "sortNo": {
           "type": "integer",
+          "format": "int32",
           "description": "排序号"
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "状态：0-停用，1-启用"
         },
         "unitCode": {
@@ -13203,6 +13914,7 @@
         },
         "visible": {
           "type": "integer",
+          "format": "int32",
           "description": "是否可见：0-否，1-是"
         }
       },
@@ -13217,6 +13929,7 @@
         },
         "endpointId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id"
         },
         "endpointName": {
@@ -13225,6 +13938,7 @@
         },
         "status": {
           "type": "integer",
+          "format": "int32",
           "description": "是否启用：0-停用，1-启用"
         }
       },
@@ -13236,6 +13950,7 @@
       "properties": {
         "appId": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "appName": {
@@ -13271,6 +13986,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "name": {
@@ -13363,6 +14079,7 @@
         },
         "id": {
           "type": "integer",
+          "format": "int32",
           "description": "主键id"
         },
         "name": {
@@ -13391,6 +14108,7 @@
         },
         "serviceId": {
           "type": "integer",
+          "format": "int32",
           "description": "服务id"
         },
         "type": {
