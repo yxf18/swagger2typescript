@@ -32,9 +32,9 @@
     "/user": {
       "post": {
         "tags": ["user"],
-        "summary": "创建用户",
-        "description": "创建用户",
-        "operationId": "createUser",
+        "summary": "创建用户222",
+        "description": "创建用户333",
+        "operationId": "createUser444",
         "consumes": ["application/json"],
         "produces": ["application/json"],
         "parameters": [
@@ -89,19 +89,8 @@
           "200": {
             "description": "successful operation",
             "schema": {
-              "type": "string"
-            },
-            "headers": {
-              "X-Rate-Limit": {
-                "type": "integer",
-                "format": "int32",
-                "description": "calls per hour allowed by the user"
-              },
-              "X-Expires-After": {
-                "type": "string",
-                "format": "date-time",
-                "description": "date in UTC when token expires"
-              }
+              "originalRef": "前端下拉列表项",
+              "$ref": "#/definitions/前端下拉列表项"
             }
           },
           "400": {
@@ -114,6 +103,7 @@
   "definitions": {
     "User": {
       "type": "object",
+      "title": "用户title",
       "properties": {
         "id": {
           "type": "integer",
@@ -128,19 +118,20 @@
           "description": "用户密码"
         },
         "phone": {
-          "type": "string"
+          "type": "string",
+          "description": "手机号"
         },
         "email": {
-          "type": "string"
+          "type": "string",
+          "description": "邮箱111"
         },
         "userStatus": {
           "type": "integer",
-          "format": "int32",
           "description": "User Status"
         }
       }
     },
-    "UserRes":{
+    "UserRes": {
       "type": "object",
       "properties": {
         "email": {
@@ -152,6 +143,29 @@
           "description": "User Status"
         }
       }
+    },
+    "前端下拉列表项": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "data": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "originalRef": "前端下拉列表项",
+              "$ref": "#/definitions/前端下拉列表项"
+            }
+          }
+        },
+        "msg": {
+          "type": "string"
+        }
+      },
+      "title": "前端下拉列表项"
     }
   }
 }

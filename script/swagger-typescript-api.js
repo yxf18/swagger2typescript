@@ -1,14 +1,15 @@
 const { generateApi, generateTemplates } = require('swagger-typescript-api');
 const path = require('path');
 const fs = require('fs');
-
+console.log('[ path.resolve(process.cwd() ]', path.resolve(process.cwd(), './api-templates'));
 const PATH_TO_OUTPUT_DIR_TEMPLATES = path.resolve(
   process.cwd(),
   './src/__generated__/api-templates',
 );
 const PATH_TO_OUTPUT_DIR_API = path.resolve(process.cwd(), './src/__generated__/api');
 // const URL = 'http://192.168.0.220:16261/v2/api-docs';
-const INPUT = path.resolve(process.cwd(), './src/swagger.json');
+const URL = 'http://127.0.0.1:4523/export/openapi?projectId=3112687&specialPurpose=openapi-generator';
+// const INPUT = path.resolve(process.cwd(), './src/swagger2.json');
 
 /* NOTE: all fields are optional expect one of `input`, `url`, `spec` */
 generateApi({
@@ -16,9 +17,9 @@ generateApi({
   // set to `false` to prevent the tool from writing to disk
   output: PATH_TO_OUTPUT_DIR_API,
   // url: 'http://api.com/swagger.json',
-  // url: URL,
-  input: INPUT,
-    // input: path.resolve(process.cwd(), './src/swagger1.json'),
+  url: URL,
+  // input: INPUT,
+  // input: path.resolve(process.cwd(), './src/swagger1.json'),
   //   spec: {
   //     swagger: '2.0',
   //     info: {
@@ -28,6 +29,7 @@ generateApi({
   //     // ...
   //   },
   //   templates: path.resolve(process.cwd(), './api-templates'),
+  // templates: path.resolve(process.cwd(), './script/api-templates'),
   httpClientType: 'axios', // or "fetch"
   //   defaultResponseAsSuccess: false,
   //   generateClient: true,
@@ -41,6 +43,7 @@ generateApi({
   extractEnums: true,
   modular: true,
   axios: true,
+  toJS: false,
   //   unwrapResponseData: false,
   //   prettier: { // By default prettier config is load from your project
   //     printWidth: 120,
@@ -115,4 +118,5 @@ generateApi({
 //   modular: false,
 //   silent: false,
 //   rewrite: false,
+//   templates: path.resolve(process.cwd(), '../src/__generated__/api-templates')
 // });

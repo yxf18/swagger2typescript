@@ -38,7 +38,7 @@ screenshot
 .eslintcache
 
 build
-servers
+.servers
 mocks
 test/file-servers/
 test/servers-allof/

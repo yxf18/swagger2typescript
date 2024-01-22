@@ -2,10 +2,20 @@
 /* eslint-disable */
 import HttpClient from '@/src/http';
 
-/** 获取系统日志列表 POST /syslog/list */
-export async function listUsingPOST5(options?: { [key: string]: any }) {
-  return request<any>('/syslog/list', {
-    method: 'POST',
-    ...(options || {}),
-  });
+/** 获取系统日志列表 POST /adminapi/syslog/list */
+export async function listUsingPOST2(
+  body: API.XiTongRiZhiDeChaXunDuiXiang,
+  options?: { [key: string]: any },
+) {
+  return request<API.RJiBenDeFenYeJieGuoDuiXiangXiTongShenJiRiZhiPoDuiXiang>(
+    '/adminapi/syslog/list',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: body,
+      ...(options || {}),
+    },
+  );
 }

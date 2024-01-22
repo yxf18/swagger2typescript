@@ -1,9 +1,0 @@
-R«sm_category表的po对象»   SmPoObjectOfCategoryTable
-【服务】个性结果处理器      PersonalityResultProcessor
-【服务】个性预处理器        ServicePersonalizedPreprocessor
-【服务】整体结果处理器      ServiceOverallResultProcessor
-【服务】整体预处理器        ServiceOverallPreprocessor
-【服务】服务分组            ServiceGrouping 
-【服务】服务参数配置        ServiceParameterConfiguration
-【服务】服务基本信息配置    ServiceBasicInformationConfiguration
-【服务】服务配置            ServiceConfiguration

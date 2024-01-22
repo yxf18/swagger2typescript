@@ -158,7 +158,9 @@ export const generateService = async ({
 
 generateService({
   requestLibPath: "import HttpClient from '@/src/http'",
-  schemaPath: 'http://192.168.0.220:16261/v2/api-docs',
+  // schemaPath: 'http://192.168.0.220:16261/v2/api-docs',
+  // schemaPath: 'http://127.0.0.1:4523/export/openapi?projectId=3112687&specialPurpose=openapi-generator',
+  schemaPath: 'http://127.0.0.1:4523/export/openapi?projectId=3928565&specialPurpose=openapi-generator',
   serversPath: './.servers',
 });
 // generateService({
